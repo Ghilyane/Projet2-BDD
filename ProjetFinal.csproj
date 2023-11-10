@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{760FCD88-701E-4547-8CB8-82E71E6BE025}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetFinal</RootNamespace>
+    <AssemblyName>ProjetFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="B56Projet2Equipe3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>B56Projet2Equipe3DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutEmploye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutEmploye.Designer.cs">
+      <DependentUpon>frmAjoutEmploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepenses.Designer.cs">
+      <DependentUpon>frmDepenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbonnements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbonnements.Designer.cs">
+      <DependentUpon>frmAbonnements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnnexion.Designer.cs">
+      <DependentUpon>frmConnnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionEmployes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionEmployes.Designer.cs">
+      <DependentUpon>frmGestionEmployes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMAJAbonnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMAJAbonnes.Designer.cs">
+      <DependentUpon>frmMAJAbonnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu1.Designer.cs">
+      <DependentUpon>frmMenu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifierEmploye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifierEmploye.Designer.cs">
+      <DependentUpon>frmModifierEmploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartieGolf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartieGolf.Designer.cs">
+      <DependentUpon>frmPartieGolf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrixEtDepenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrixEtDepenses.Designer.cs">
+      <DependentUpon>frmPrixEtDepenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapports.Designer.cs">
+      <DependentUpon>frmRapports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReabonnements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReabonnements.Designer.cs">
+      <DependentUpon>frmReabonnements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStats.Designer.cs">
+      <DependentUpon>frmStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAjoutEmploye.resx">
+      <DependentUpon>frmAjoutEmploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepenses.resx">
+      <DependentUpon>frmDepenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbonnements.resx">
+      <DependentUpon>frmAbonnements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnnexion.resx">
+      <DependentUpon>frmConnnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionEmployes.resx">
+      <DependentUpon>frmGestionEmployes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMAJAbonnes.resx">
+      <DependentUpon>frmMAJAbonnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu1.resx">
+      <DependentUpon>frmMenu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifierEmploye.resx">
+      <DependentUpon>frmModifierEmploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartieGolf.resx">
+      <DependentUpon>frmPartieGolf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrixEtDepenses.resx">
+      <DependentUpon>frmPrixEtDepenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapports.resx">
+      <DependentUpon>frmRapports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReabonnements.resx">
+      <DependentUpon>frmReabonnements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStats.resx">
+      <DependentUpon>frmStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="B56Projet2Equipe3DataSet.xsc">
+      <DependentUpon>B56Projet2Equipe3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="B56Projet2Equipe3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>B56Projet2Equipe3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="B56Projet2Equipe3DataSet.xss">
+      <DependentUpon>B56Projet2Equipe3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Abonnements.datasource" />
+    <None Include="Properties\DataSources\Dependants.datasource" />
+    <None Include="Properties\DataSources\Depenses.datasource" />
+    <None Include="Properties\DataSources\Employes.datasource" />
+    <None Include="Properties\DataSources\PartiesJouees.datasource" />
+    <None Include="Properties\DataSources\PrixDepensesAbonnements.datasource" />
+    <None Include="Properties\DataSources\Provinces.datasource" />
+    <None Include="Properties\DataSources\Reabonnements.datasource" />
+    <None Include="Properties\DataSources\Services.datasource" />
+    <None Include="Properties\DataSources\Terrains.datasource" />
+    <None Include="Properties\DataSources\TypesAbonnement.datasource" />
+    <None Include="Properties\DataSources\TypesEmploye.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icones\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
