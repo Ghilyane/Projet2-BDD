@@ -14,6 +14,7 @@ namespace ProjetFinal
     {
         public int intTypeEmploye;
         public string prenomEmploye;
+        public int intNoEmploye { get; set; }
 
         public frmMenu1()
         {
@@ -51,7 +52,7 @@ namespace ProjetFinal
 
         private void btnEmployes_Click(object sender, EventArgs e)
         {
-            ajouterForm(new frmGestionEmployes(), this.btnEmployes);
+            ajouterForm(new frmGestionEmployes(intNoEmploye), this.btnEmployes);
         }
 
         private void btnAbonnements_Click(object sender, EventArgs e)

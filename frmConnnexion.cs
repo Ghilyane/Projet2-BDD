@@ -14,7 +14,7 @@ namespace ProjetFinal
     {
         DataClasses1DataContext monDataContext = new DataClasses1DataContext();
         frmMenu1 frmMenu1 = new frmMenu1();
-        private readonly string strNomBase = "Entrez votre nom";
+        private readonly string strNomBase = "Entrez votre numéro d'employé";
         private readonly string strMDPBase = "Entrez votre mot de passe";
 
 
@@ -91,9 +91,10 @@ namespace ProjetFinal
                 
                 int intTypeEmploye = employeConnexion.First().NoTypeEmploye;
 
-
                 frmMenu1.intTypeEmploye = (intTypeEmploye == 1 || intTypeEmploye == 2) ? 0 : 1;
                 frmMenu1.prenomEmploye = employeConnexion.First().Prenom;
+                frmMenu1.intNoEmploye = employeConnexion.First().No;
+
                 frmMenu1.ShowDialog();
             }
             else
