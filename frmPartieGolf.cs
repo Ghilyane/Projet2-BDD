@@ -12,9 +12,16 @@ namespace ProjetFinal
 {
     public partial class frmPartieGolf : Form
     {
+        DataClasses1DataContext monDataContext = new DataClasses1DataContext();
+
         public frmPartieGolf()
         {
             InitializeComponent();
+        }
+
+        private void frmPartieGolf_Load(object sender, EventArgs e)
+        {
+            partiesJoueesBindingSource.DataSource = monDataContext.PartiesJouees;
         }
     }
 }
