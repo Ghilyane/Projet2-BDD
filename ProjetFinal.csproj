@@ -34,8 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,7 +45,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -57,6 +58,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutAbonnement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutAbonnement.Designer.cs">
+      <DependentUpon>frmAjoutAbonnement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAjoutDependant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutDependant.Designer.cs">
+      <DependentUpon>frmAjoutDependant.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAjoutEmploye.cs">
       <SubType>Form</SubType>
@@ -138,6 +151,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAjoutAbonnement.resx">
+      <DependentUpon>frmAjoutAbonnement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutDependant.resx">
+      <DependentUpon>frmAjoutDependant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAjoutEmploye.resx">
       <DependentUpon>frmAjoutEmploye.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

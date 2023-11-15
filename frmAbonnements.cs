@@ -12,9 +12,16 @@ namespace ProjetFinal
 {
     public partial class frmAbonnements : Form
     {
+        frmAjoutAbonnement frmAjout = new frmAjoutAbonnement();
         public frmAbonnements()
         {
             InitializeComponent();
+        }
+
+        private void btnAjout_Click(object sender, EventArgs e)
+        {
+            frmAjout.ShowDialog();
+
         }
     }
 }

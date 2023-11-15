@@ -8,6 +8,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.ComponentModel.DataAnnotations;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ProjetFinal
@@ -40,6 +42,7 @@ namespace ProjetFinal
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+
             bool booValide = true;
             var requeteAdmin = from untType in monDataContext.TypesEmploye
                                    where untType.No == 1
@@ -49,7 +52,7 @@ namespace ProjetFinal
 
             var exprMDP = new Regex(@"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]+$");
             var exprNomPrenom = new Regex(@"^(([A-Z]|[a-z]|[À-Ü]|[à-ü])+([ '-]?([A-Z]|[a-z]|[À-Ü]|[à-ü])+)*)$");
-            var exprCodeCivil = new Regex(@"^\d{1,6}$");
+            var exprCodeCivil = new Regex(@"^\d{1,7}$");
             var exprCourriel = new Regex(@"^$");
 
             //var addr = new System.Net.Mail.MailAddress(tbCourriel.Text);
@@ -99,11 +102,27 @@ namespace ProjetFinal
 
             //Courriel
             booValide = !verificationErreur(strCourriel == "", tbCourriel, "Veuillez saisir un courriel.") && booValide;
-            //regex
+
+            //courriel déjà existant
+            //téléphone déjà ce tel
+            var email = new EmailAddressAttribute();
+            bool boo = true;
+            boo = email.IsValid(strCourriel);
+            //try
+            //{
+            //    var addr = new System.Net.Mail.MailAddress(strCourriel);
+            //    boo = addr.Address == strCourriel;
+            //}
+            //catch
+            //{
+            //    boo = false;
+            //}
+
+            MessageBox.Show(boo.ToString());
 
             //No civique
             booValide = !verificationErreur(tbNoCivique.Text.Trim() == "", tbNoCivique, "Veuillez saisir un code civil.") && booValide;
-            booValide = !verificationErreur(!exprCodeCivil.IsMatch(tbNoCivique.Text), tbNoCivique, "Le code peut contenir entre 1 à 6 chiffres.") && booValide;
+            booValide = !verificationErreur(!exprCodeCivil.IsMatch(tbNoCivique.Text.Trim()), tbNoCivique, "Le numéro peut contenir entre 1 à 6 chiffres.") && booValide;
 
             //Rue
             booValide = !verificationErreur(!exprNomPrenom.IsMatch(strRue), tbRue, "La rue peut seulement avoir des lettres, des tirets, des espaces et apostrophes.") && booValide;
@@ -120,10 +139,10 @@ namespace ProjetFinal
 
             //Code postal
             booValide = !verificationErreur(mtbCodePostal.Text.Trim() == "", mtbCodePostal, "Veuillez choisir un code postal.") && booValide;
-            booValide = !verificationErreur(mtbCodePostal.Text.Length != 6, mtbCodePostal, "Le code postal doit avoir 6 caractères.") && booValide;
+            booValide = !verificationErreur(mtbCodePostal.Text.Length !=6, mtbCodePostal, "Le code postal doit avoir 6 caractères.") && booValide;
 
             //Remarque
-            // non nécessaire ?
+            booValide = !verificationErreur(tbRemarque.Text.Trim().Length > 40, tbRemarque, "La remarque ne doit pas avoir avoir plus de 40 caractères.") && booValide;
 
 
             if (booValide)
@@ -139,9 +158,11 @@ namespace ProjetFinal
                 nouvelEmploye.Cellulaire = mtbCellulaire.Text.Trim();
                 nouvelEmploye.Courriel = tbCourriel.Text.Trim();
                 nouvelEmploye.Remarque = tbRemarque.Text.Trim();
+
+                nouvelEmploye.NoCivique = Int32.Parse(tbNoCivique.Text.Trim());
                 nouvelEmploye.Rue = tbRue.Text.Trim();
-                nouvelEmploye.IdProvince = (string)cbProvince.SelectedValue;
                 nouvelEmploye.Ville = strVille;
+                nouvelEmploye.IdProvince = (string)cbProvince.SelectedValue;
                 nouvelEmploye.CodePostal =  mtbCodePostal.Text.Trim().ToUpper();
 
                 this.Close();

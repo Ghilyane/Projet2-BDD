@@ -128,7 +128,8 @@ namespace ProjetFinal
             booValide = !verificationErreur(mtbCodePostal.Text.Length != 6, mtbCodePostal, "Le code postal doit avoir 6 caractères.") && booValide;
 
             //Remarque
-            // non nécessaire ?
+            booValide = !verificationErreur(tbRemarque.Text.Trim().Length > 40, mtbCodePostal, "La remarque ne doit pas avoir avoir plus de 40 caractères.") && booValide;
+
 
 
             if (booValide)

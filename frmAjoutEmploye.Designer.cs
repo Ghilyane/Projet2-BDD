@@ -504,11 +504,11 @@
             // mtbCodePostal
             // 
             this.mtbCodePostal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.mtbCodePostal.Location = new System.Drawing.Point(340, 610);
+            this.mtbCodePostal.Location = new System.Drawing.Point(320, 610);
             this.mtbCodePostal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mtbCodePostal.Mask = "L0L 0L0";
             this.mtbCodePostal.Name = "mtbCodePostal";
-            this.mtbCodePostal.Size = new System.Drawing.Size(73, 28);
+            this.mtbCodePostal.Size = new System.Drawing.Size(93, 28);
             this.mtbCodePostal.TabIndex = 58;
             this.mtbCodePostal.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 

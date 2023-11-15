@@ -43,3 +43,6 @@ D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.csproj.CoreCompileInputs.cache
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.exe
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.pdb
+D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutAbonnement.resources
+D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutDependant.resources
+D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.csproj.SuggestedBindingRedirects.cache
