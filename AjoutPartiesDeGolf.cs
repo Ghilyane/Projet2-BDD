@@ -47,6 +47,7 @@ namespace ProjetFinal
                     {
                         dataContext.SubmitChanges();
                         MessageBox.Show("La partie a été enregistrées avec succès");
+                        this.Close();
                     }
                     catch(Exception ex)
                     {
@@ -82,6 +83,11 @@ namespace ProjetFinal
             cbTerrain.DataSource = terrainSelectionne.Select(a => new { Key = a.nom, Value = a.no }).ToList();
             cbTerrain.DisplayMember = "Key";
             cbTerrain.ValueMember = "Value";
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

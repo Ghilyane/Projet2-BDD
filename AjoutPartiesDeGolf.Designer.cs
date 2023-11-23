@@ -171,6 +171,7 @@
             // 
             // datePartie
             // 
+            this.datePartie.Enabled = false;
             this.datePartie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePartie.Location = new System.Drawing.Point(676, 156);
             this.datePartie.Margin = new System.Windows.Forms.Padding(4);
@@ -198,6 +199,7 @@
             this.btnAnnuler.TabIndex = 14;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // errMessage
             // 
