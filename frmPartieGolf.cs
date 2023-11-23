@@ -13,6 +13,7 @@ namespace ProjetFinal
     public partial class frmPartieGolf : Form
     {
         DataClasses1DataContext monDataContext = new DataClasses1DataContext();
+        AjoutPartiesDeGolf ajp = new AjoutPartiesDeGolf();
 
         public frmPartieGolf()
         {
@@ -22,6 +23,11 @@ namespace ProjetFinal
         private void frmPartieGolf_Load(object sender, EventArgs e)
         {
             partiesJoueesBindingSource.DataSource = monDataContext.PartiesJouees;
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            ajp.ShowDialog();
         }
     }
 }
