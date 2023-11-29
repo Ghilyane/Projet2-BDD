@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label label4;
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
@@ -39,12 +40,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nudMontant = new System.Windows.Forms.NumericUpDown();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNo = new System.Windows.Forms.TextBox();
+            this.txtRemarque = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbService = new System.Windows.Forms.ComboBox();
+            this.errMessage = new System.Windows.Forms.ErrorProvider(this.components);
             label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudMontant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errMessage)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -55,15 +58,15 @@
             label4.ForeColor = System.Drawing.Color.Black;
             label4.Location = new System.Drawing.Point(59, 182);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(30, 20);
+            label4.Size = new System.Drawing.Size(36, 20);
             label4.TabIndex = 19;
-            label4.Text = "Id:";
+            label4.Text = "No:";
             // 
             // btnAnnuler
             // 
             this.btnAnnuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnnuler.Location = new System.Drawing.Point(542, 372);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(146, 28);
             this.btnAnnuler.TabIndex = 27;
@@ -74,7 +77,7 @@
             // 
             this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouter.Location = new System.Drawing.Point(248, 372);
-            this.btnAjouter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAjouter.Margin = new System.Windows.Forms.Padding(2);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(143, 28);
             this.btnAjouter.TabIndex = 26;
@@ -179,22 +182,22 @@
             this.nudMontant.Size = new System.Drawing.Size(135, 22);
             this.nudMontant.TabIndex = 15;
             // 
-            // txtId
+            // txtNo
             // 
-            this.txtId.Enabled = false;
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(220, 183);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(45, 22);
-            this.txtId.TabIndex = 28;
+            this.txtNo.Enabled = false;
+            this.txtNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNo.Location = new System.Drawing.Point(220, 183);
+            this.txtNo.Name = "txtNo";
+            this.txtNo.Size = new System.Drawing.Size(45, 22);
+            this.txtNo.TabIndex = 28;
             // 
-            // textBox1
+            // txtRemarque
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(646, 269);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 22);
-            this.textBox1.TabIndex = 30;
+            this.txtRemarque.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRemarque.Location = new System.Drawing.Point(646, 269);
+            this.txtRemarque.Name = "txtRemarque";
+            this.txtRemarque.Size = new System.Drawing.Size(175, 22);
+            this.txtRemarque.TabIndex = 30;
             // 
             // label7
             // 
@@ -218,15 +221,19 @@
             this.cbService.Size = new System.Drawing.Size(224, 24);
             this.cbService.TabIndex = 31;
             // 
+            // errMessage
+            // 
+            this.errMessage.ContainerControl = this;
+            // 
             // frmAjoutDepense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 450);
             this.Controls.Add(this.cbService);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRemarque);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtNo);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.dateDepense);
@@ -239,11 +246,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nudMontant);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAjoutDepense";
             this.Text = "frmAjoutDepense";
             this.Load += new System.EventHandler(this.frmAjoutDepense_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudMontant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errMessage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,9 +269,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown nudMontant;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNo;
+        private System.Windows.Forms.TextBox txtRemarque;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbService;
+        private System.Windows.Forms.ErrorProvider errMessage;
     }
 }

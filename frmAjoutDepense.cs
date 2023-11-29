@@ -24,7 +24,62 @@ namespace ProjetFinal
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            
+            var serviceExistant = from service in dataContext.Services
+                                  where service.NoEmploye == intTypeEmploye && service.TypeService == cbService.SelectedValue.ToString()
+                                  select service.No;
+            int numService = 0;
+            if(serviceExistant.Count() == 0)
+            {
+                numService = dataContext.Services.Count() + 1;
+                var service = new Services
+                {
+                    No = dataContext.Services.Count() + 1,
+                    TypeService = cbService.SelectedValue.ToString(),
+                    NoEmploye = intTypeEmploye
+                };
+
+                dataContext.Services.InsertOnSubmit(service);
+
+                try
+                {
+                    dataContext.SubmitChanges();
+                    MessageBox.Show("Le service a été enregistrées avec succès");
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Impossible d'enregistrer le service!!!");
+                }
+
+            }
+            else
+            {
+                numService = int.Parse(serviceExistant.Select(a => a).ToString());
+            }
+
+            var depense = new Depenses
+            {
+                No = int.Parse(txtNo.Text),
+                IdAbonnement = cbAbonnement.ValueMember,
+                DateDepense = dateDepense.Value,
+                Montant = nudMontant.Value,
+                NoService = numService,
+                Remarque = txtRemarque.Text
+            };
+
+            dataContext.Depenses.InsertOnSubmit(depense);
+
+            try
+            {
+                dataContext.SubmitChanges();
+                MessageBox.Show("La dépense a été enregistrées avec succès");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Impossible d'enregistrer La dépense!!!");
+            }
+
         }
 
         private void frmAjoutDepense_Load(object sender, EventArgs e)
@@ -33,7 +88,6 @@ namespace ProjetFinal
                 from abonnement in dataContext.Abonnements
                 select new { identifiant = abonnement.Id + "(" + abonnement.Nom + " " + abonnement.Prenom + ")", id = abonnement.Id, dateAbonnement = abonnement.DateAbonnement };
 
-            intTypeEmploye = 1;
             MessageBox.Show(intTypeEmploye.ToString());
             if (intTypeEmploye == 1 || intTypeEmploye == 2 || intTypeEmploye == 3)
             {
@@ -66,7 +120,7 @@ namespace ProjetFinal
             cbAbonnement.DisplayMember = "Key";
             cbAbonnement.ValueMember = "Value";
 
-            txtId.Text = (dataContext.Depenses.Count() + 1).ToString();
+            txtNo.Text = (dataContext.Depenses.Count() + 1).ToString();
         }
     }
 }
