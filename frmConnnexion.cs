@@ -92,7 +92,7 @@ namespace ProjetFinal
                 
                 int intTypeEmploye = employeConnexion.First().NoTypeEmploye;
 
-                frmMenu1.intTypeEmploye = (intTypeEmploye == 1 || intTypeEmploye == 2) ? 0 : 1;
+                frmMenu1.intTypeEmploye = (intTypeEmploye == 1 || intTypeEmploye == 2 || intTypeEmploye == 3) ? 0 : 1;
                 frmMenu1.prenomEmploye = employeConnexion.First().Prenom;
                 frmMenu1.intNoEmploye = employeConnexion.First().No;
                 frmAD.intTypeEmploye = intTypeEmploye;

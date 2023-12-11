@@ -94,20 +94,27 @@ namespace ProjetFinal
             booValide = !verificationErreur(cbSexe.Text.Trim() == "", cbSexe, "Veuillez saisir un sexe.") && booValide;
 
             //Téléphone
-            booValide = !verificationErreur(mtbTelephone.Text.Trim() == "", mtbTelephone, "Veuillez saisir un numéro de téléphone.") && booValide;
             booValide = !verificationErreur(mtbTelephone.Text.Length != 10, mtbTelephone, "Le numéro de téléphone doit contenir 10 caractères.") && booValide;
+            booValide = !verificationErreur(mtbTelephone.Text.Trim() == "", mtbTelephone, "Veuillez saisir un numéro de téléphone.") && booValide;
 
             //Cellulaire
             booValide = !verificationErreur(mtbCellulaire.Text.Trim() != "" && mtbCellulaire.Text.Length != 10, mtbCellulaire, "Le numéro de cellulaire doit contenir 10 caractères.") && booValide;
 
+
             //Courriel
+            var email = new EmailAddressAttribute();
+            bool boo = email.IsValid(strCourriel);
+            int nbCourriels = (from unEmploye in monDataContext.Employes
+                              where unEmploye.Courriel == tbCourriel.Text
+                              select unEmploye).Count();
+
+            booValide = !verificationErreur(nbCourriels > 0, tbCourriel, "Ce courriel a déjà été utilisé.") && booValide;
+            booValide = !verificationErreur(!email.IsValid(strCourriel), tbCourriel, "Veuillez saisir un courriel valide.") && booValide;
             booValide = !verificationErreur(strCourriel == "", tbCourriel, "Veuillez saisir un courriel.") && booValide;
 
             //courriel déjà existant
             //téléphone déjà ce tel
-            var email = new EmailAddressAttribute();
-            bool boo = true;
-            boo = email.IsValid(strCourriel);
+
             //try
             //{
             //    var addr = new System.Net.Mail.MailAddress(strCourriel);
@@ -121,8 +128,8 @@ namespace ProjetFinal
             MessageBox.Show(boo.ToString());
 
             //No civique
-            booValide = !verificationErreur(tbNoCivique.Text.Trim() == "", tbNoCivique, "Veuillez saisir un code civil.") && booValide;
             booValide = !verificationErreur(!exprCodeCivil.IsMatch(tbNoCivique.Text.Trim()), tbNoCivique, "Le numéro peut contenir entre 1 à 6 chiffres.") && booValide;
+            booValide = !verificationErreur(tbNoCivique.Text.Trim() == "", tbNoCivique, "Veuillez saisir un code civil.") && booValide;
 
             //Rue
             booValide = !verificationErreur(!exprNomPrenom.IsMatch(strRue), tbRue, "La rue peut seulement avoir des lettres, des tirets, des espaces et apostrophes.") && booValide;
@@ -138,8 +145,8 @@ namespace ProjetFinal
             booValide = !verificationErreur(cbProvince.Text.Trim() == "", cbProvince, "Veuillez choisir une province.") && booValide;
 
             //Code postal
-            booValide = !verificationErreur(mtbCodePostal.Text.Trim() == "", mtbCodePostal, "Veuillez choisir un code postal.") && booValide;
             booValide = !verificationErreur(mtbCodePostal.Text.Length !=6, mtbCodePostal, "Le code postal doit avoir 6 caractères.") && booValide;
+            booValide = !verificationErreur(mtbCodePostal.Text.Trim() == "", mtbCodePostal, "Veuillez choisir un code postal.") && booValide;
 
             //Remarque
             booValide = !verificationErreur(tbRemarque.Text.Trim().Length > 40, tbRemarque, "La remarque ne doit pas avoir avoir plus de 40 caractères.") && booValide;
@@ -167,7 +174,6 @@ namespace ProjetFinal
 
                 this.Close();
             }
-
         }
 
         private bool verificationErreur(bool booCondition, Control control, string strMessage)

@@ -69,6 +69,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
+
+            // frmDepenses
+
             // dateDepenseLabel
             // 
             dateDepenseLabel.AutoSize = true;
