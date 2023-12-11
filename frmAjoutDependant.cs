@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Linq;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace ProjetFinal
         DataClasses1DataContext monDataContext = new DataClasses1DataContext();
         public Dependants nouvelDependant = new Dependants();
         public char strLienFamille;
+        public bool booAnnuler = false;
 
         public frmAjoutDependant()
         {
@@ -95,7 +97,14 @@ namespace ProjetFinal
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+            DialogResult result = MessageBox.Show("Êtes-vous sûr.e de vouloir annuler cet abonnement?", "Confirmation de l'annulation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                booAnnuler = true;
+                this.Close();
+            }
         }
 
         private bool verificationErreur(bool booCondition, Control control, string strMessage)

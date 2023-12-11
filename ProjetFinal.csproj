@@ -149,6 +149,7 @@
     <Compile Include="frmStats.Designer.cs">
       <DependentUpon>frmStats.cs</DependentUpon>
     </Compile>
+    <Compile Include="NoetNomAbonnements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAjoutAbonnement.resx">
@@ -224,6 +225,7 @@
     <None Include="Properties\DataSources\Dependants.datasource" />
     <None Include="Properties\DataSources\Depenses.datasource" />
     <None Include="Properties\DataSources\Employes.datasource" />
+    <None Include="Properties\DataSources\NoetNomAbonnements.datasource" />
     <None Include="Properties\DataSources\PartiesJouees.datasource" />
     <None Include="Properties\DataSources\PrixDepensesAbonnements.datasource" />
     <None Include="Properties\DataSources\Provinces.datasource" />
