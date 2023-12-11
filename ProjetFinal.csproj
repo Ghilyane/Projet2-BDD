@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjoutPartiesDeGolf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutPartiesDeGolf.Designer.cs">
+      <DependentUpon>AjoutPartiesDeGolf.cs</DependentUpon>
+    </Compile>
     <Compile Include="B56Projet2Equipe3DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,6 +158,9 @@
     <Compile Include="NoetNomAbonnements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AjoutPartiesDeGolf.resx">
+      <DependentUpon>AjoutPartiesDeGolf.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAjoutAbonnement.resx">
       <DependentUpon>frmAjoutAbonnement.cs</DependentUpon>
     </EmbeddedResource>

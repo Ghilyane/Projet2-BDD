@@ -45,3 +45,57 @@ D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\bin\Debug\ProjetFinal.
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\bin\Debug\ProjetFinal.pdb
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.exe
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.pdb
+D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutAbonnement.resources
+D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutDependant.resources
+D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.csproj.SuggestedBindingRedirects.cache
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\bin\Debug\ProjetFinal.exe.config
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\bin\Debug\ProjetFinal.exe
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\bin\Debug\ProjetFinal.pdb
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.csproj.AssemblyReference.cache
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.csproj.SuggestedBindingRedirects.cache
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutAbonnement.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutDependant.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutEmploye.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmDepenses.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmAbonnements.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmConnnexion.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmGestionEmployes.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmMAJAbonnes.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmMenu1.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmModifierEmploye.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmPartieGolf.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmPrixEtDepenses.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmRapports.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmReabonnements.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.frmStats.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.Properties.Resources.resources
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.csproj.GenerateResource.cache
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.csproj.CoreCompileInputs.cache
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.exe
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.pdb
+C:\Users\c.traore\OneDrive - Cegep Gerald-Godin\Documents\GitHub\Projet\Projet2-BDD\obj\Debug\ProjetFinal.AjoutPartiesDeGolf.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.csproj.AssemblyReference.cache
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.AjoutPartiesDeGolf.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutAbonnement.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutDependant.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutEmploye.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmDepenses.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmAbonnements.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmConnnexion.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmGestionEmployes.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmMAJAbonnes.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmMenu1.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmModifierEmploye.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmPartieGolf.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmPrixEtDepenses.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmRapports.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmReabonnements.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.frmStats.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.Properties.Resources.resources
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.csproj.GenerateResource.cache
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.csproj.CoreCompileInputs.cache
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.exe
+H:\Android\Projet2-BDD\obj\Debug\ProjetFinal.pdb
+H:\Android\Projet2-BDD\bin\Debug\ProjetFinal.exe.config
+H:\Android\Projet2-BDD\bin\Debug\ProjetFinal.exe
+H:\Android\Projet2-BDD\bin\Debug\ProjetFinal.pdb
