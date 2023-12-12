@@ -16,5 +16,26 @@ namespace ProjetFinal
         {
             InitializeComponent();
         }
+
+        private void dépensesParAbonnementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dépensesParAnnéeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dépensesParEmployéToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lblAffiche.Visible = true;
+            lblAffiche.Text += " dépense par employé";            
+        }
+
+        private void btnRechercher_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

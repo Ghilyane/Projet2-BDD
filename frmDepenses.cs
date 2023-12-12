@@ -14,6 +14,7 @@ namespace ProjetFinal
     {
         DataClasses1DataContext dataContext = new DataClasses1DataContext();
         frmAjoutDepense frmAD = new frmAjoutDepense();
+        public int intTypeEmploye;
         public frmDepenses()
         {
             InitializeComponent();
@@ -23,6 +24,14 @@ namespace ProjetFinal
         {
             depensesBindingSource.DataSource = dataContext.Depenses;
             toolStripLblTotal.Text = String.Format("de {0}", depensesBindingSource.Count);
+
+            var nomCompletEmp = (from employe in dataContext.Employes
+                                from service in dataContext.Services
+                                where service.No == int.Parse(txtNo.Text)
+                                && service.NoEmploye == employe.No
+                                select new {nomComplet =  employe.Nom + " " + employe.Prenom}).FirstOrDefault();
+
+            txtNomComplet.Text = nomCompletEmp.nomComplet;
         }
 
         private void BtnPremier_Click(object sender, EventArgs e)
@@ -47,7 +56,13 @@ namespace ProjetFinal
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+            frmAD.intTypeEmploye = intTypeEmploye;
             frmAD.ShowDialog();
+        }
+
+        private void txtNo_TextChanged(object sender, EventArgs e)
+        {
+            tbIndex.Text = (depensesBindingSource.Position + 1).ToString(); ;
         }
     }
 }
