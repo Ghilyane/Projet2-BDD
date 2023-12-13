@@ -13,7 +13,7 @@ namespace ProjetFinal
     public partial class frmDepenses : Form
     {
         DataClasses1DataContext dataContext = new DataClasses1DataContext();
-        frmDepenses frmAD = new frmDepenses();
+        frmAjoutDepense frmAD = new frmAjoutDepense();
         public int intTypeEmploye;
         public frmDepenses()
         {

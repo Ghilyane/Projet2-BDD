@@ -25,6 +25,16 @@ namespace ProjetFinal
         private void frmMenu1_Load(object sender, EventArgs e)
         {
             lblSession.Text = $"Bienvenue {prenomEmploye} !";
+            this.btnEmployes.Enabled = (intNoEmploye == 1 || intNoEmploye == 2) ? true : false;
+            this.btnAbonnements.Enabled = (intNoEmploye == 1 || intNoEmploye == 3 || intNoEmploye == 4) ? true : false;
+            this.btnReabonnements.Enabled = (intNoEmploye == 1 || intNoEmploye == 3 || intNoEmploye == 4) ? true : false;
+            this.btnMAJ.Enabled = (intNoEmploye == 1 || intNoEmploye == 3 || intNoEmploye == 4) ? true : false;
+            this.btnPrixDepenses.Enabled = (intNoEmploye == 1 || intNoEmploye == 2 || intNoEmploye == 3) ? true : false;
+            this.btnPartieGolf.Enabled = (intNoEmploye == 1 || intNoEmploye == 3 || intNoEmploye == 4) ? true : false;
+            this.btnDepenses.Enabled = (intNoEmploye == 4) ? false : true;
+            this.btnRapports.Enabled = (intNoEmploye == 1 || intNoEmploye == 2 || intNoEmploye == 3) ? true : false;
+            this.btnStats.Enabled = (intNoEmploye == 1 || intNoEmploye == 2 || intNoEmploye == 3) ? true : false;
+
         }
 
 
@@ -84,13 +94,15 @@ namespace ProjetFinal
         private void btnDepenses_Click(object sender, EventArgs e)
         {
             frmDepenses frmD = new frmDepenses();
-            frmD.intTypeEmploye = noTypeEmploye;
+            frmD.intTypeEmploye = intNoEmploye;
             ajouterForm(frmD, this.btnDepenses);
+
         }
 
         private void btnRappors_Click(object sender, EventArgs e)
         {
             ajouterForm(new frmRapports(), this.btnRapports);
+
         }
 
         private void btnStats_Click(object sender, EventArgs e)

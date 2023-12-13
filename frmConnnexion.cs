@@ -95,8 +95,6 @@ namespace ProjetFinal
                 frmMenu1.prenomEmploye = employeConnexion.First().Prenom;
                 frmMenu1.intNoEmploye = employeConnexion.First().No;
 
-                MessageBox.Show(intTypeEmploye.ToString());
-
                 frmMenu1.ShowDialog();
             }
             else
