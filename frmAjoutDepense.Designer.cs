@@ -91,7 +91,7 @@
             this.dateDepense.Enabled = false;
             this.dateDepense.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateDepense.Location = new System.Drawing.Point(861, 126);
-            this.dateDepense.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateDepense.Margin = new System.Windows.Forms.Padding(4);
             this.dateDepense.Name = "dateDepense";
             this.dateDepense.Size = new System.Drawing.Size(297, 26);
             this.dateDepense.TabIndex = 25;
@@ -101,7 +101,7 @@
             this.cbAbonnement.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbAbonnement.FormattingEnabled = true;
             this.cbAbonnement.Location = new System.Drawing.Point(293, 128);
-            this.cbAbonnement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAbonnement.Margin = new System.Windows.Forms.Padding(4);
             this.cbAbonnement.Name = "cbAbonnement";
             this.cbAbonnement.Size = new System.Drawing.Size(228, 28);
             this.cbAbonnement.TabIndex = 22;
@@ -181,7 +181,7 @@
             0,
             65536});
             this.nudMontant.Location = new System.Drawing.Point(293, 334);
-            this.nudMontant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudMontant.Margin = new System.Windows.Forms.Padding(4);
             this.nudMontant.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -193,11 +193,11 @@
             // 
             // txtNo
             // 
-            this.txtNo.Enabled = false;
             this.txtNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNo.Location = new System.Drawing.Point(293, 225);
-            this.txtNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtNo.Name = "txtNo";
+            this.txtNo.ReadOnly = true;
             this.txtNo.Size = new System.Drawing.Size(59, 26);
             this.txtNo.TabIndex = 28;
             // 
@@ -205,7 +205,7 @@
             // 
             this.txtRemarque.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRemarque.Location = new System.Drawing.Point(861, 331);
-            this.txtRemarque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemarque.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemarque.Name = "txtRemarque";
             this.txtRemarque.Size = new System.Drawing.Size(232, 26);
             this.txtRemarque.TabIndex = 30;
@@ -229,7 +229,7 @@
             this.cbService.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbService.FormattingEnabled = true;
             this.cbService.Location = new System.Drawing.Point(861, 223);
-            this.cbService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbService.Margin = new System.Windows.Forms.Padding(4);
             this.cbService.Name = "cbService";
             this.cbService.Size = new System.Drawing.Size(297, 28);
             this.cbService.TabIndex = 31;

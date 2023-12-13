@@ -77,6 +77,12 @@
     <Compile Include="frmAjoutDependant.Designer.cs">
       <DependentUpon>frmAjoutDependant.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAjoutDepense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutDepense.Designer.cs">
+      <DependentUpon>frmAjoutDepense.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAjoutEmploye.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAjoutDependant.resx">
       <DependentUpon>frmAjoutDependant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutDepense.resx">
+      <DependentUpon>frmAjoutDepense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAjoutEmploye.resx">
       <DependentUpon>frmAjoutEmploye.cs</DependentUpon>
