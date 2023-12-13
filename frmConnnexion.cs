@@ -14,7 +14,7 @@ namespace ProjetFinal
     {
         DataClasses1DataContext monDataContext = new DataClasses1DataContext();
         frmMenu1 frmMenu1 = new frmMenu1();
-        frmAjoutDepense frmAD = new frmAjoutDepense();
+        frmDepenses frmAD = new frmDepenses();
         private readonly string strNomBase = "Entrez votre numéro d'employé";
         private readonly string strMDPBase = "Entrez votre mot de passe";
 
