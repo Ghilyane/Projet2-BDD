@@ -37,7 +37,6 @@
             System.Windows.Forms.Label remarqueLabel;
             System.Windows.Forms.Label label3;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDepenses));
-            this.label1 = new System.Windows.Forms.Label();
             this.dateDepenseDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.depensesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idAbonnementTextBox = new System.Windows.Forms.TextBox();
@@ -57,6 +56,8 @@
             this.btnAjouter = new System.Windows.Forms.Button();
             this.txtNomComplet = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             dateDepenseLabel = new System.Windows.Forms.Label();
             idAbonnementLabel = new System.Windows.Forms.Label();
             montantLabel = new System.Windows.Forms.Label();
@@ -67,11 +68,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.depensesBindingSource)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-
-            // frmDepenses
-
             // dateDepenseLabel
             // 
             dateDepenseLabel.AutoSize = true;
@@ -148,19 +147,6 @@
             label3.Size = new System.Drawing.Size(126, 22);
             label3.TabIndex = 39;
             label3.Text = "Nom Employé:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(250, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 31);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Ajout d\'une dépense";
             // 
             // dateDepenseDateTimePicker
             // 
@@ -351,11 +337,34 @@
             this.numericUpDown1.TabIndex = 41;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(730, 48);
+            this.panel1.TabIndex = 42;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(236, 9);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(210, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Ajout d\'une dépense";
+            // 
             // frmDepenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 522);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.txtNomComplet);
             this.Controls.Add(label3);
@@ -373,7 +382,6 @@
             this.Controls.Add(this.idAbonnementTextBox);
             this.Controls.Add(dateDepenseLabel);
             this.Controls.Add(this.dateDepenseDateTimePicker);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -384,14 +392,14 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource depensesBindingSource;
         private System.Windows.Forms.DateTimePicker dateDepenseDateTimePicker;
         private System.Windows.Forms.TextBox idAbonnementTextBox;
@@ -411,5 +419,7 @@
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.TextBox txtNomComplet;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
     }
 }

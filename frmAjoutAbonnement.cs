@@ -154,7 +154,7 @@ namespace ProjetFinal
                                     row.Cells.Cast<DataGridViewCell>().All(cell => cell.ErrorText == ""))
                                 {
 
-                                    nouvelDependant.Id = (row.Index == 0) ? nouvelAbonnement.Nom + numLien + row.Cells["cbSexeD"].Value.ToString() + row.Index : nouvelAbonnement.Nom + numLien + row.Cells["cbSexeD"].Value.ToString() + row.Index;
+                                    nouvelDependant.Id = (row.Index == 0) ? nouvelAbonnement.Nom + numLien + row.Cells["cbSexeD"].Value.ToString() + row.Index : nouvelAbonnement.Nom + numLien + "E" + row.Index;
                                     nouvelDependant.Nom = row.Cells["dgNom"].Value.ToString();
                                     nouvelDependant.Prenom = row.Cells["dgPrenom"].Value.ToString();
                                     nouvelDependant.Sexe = row.Cells["cbSexeD"].Value.ToString();

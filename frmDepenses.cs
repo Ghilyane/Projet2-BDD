@@ -25,13 +25,16 @@ namespace ProjetFinal
             depensesBindingSource.DataSource = dataContext.Depenses;
             toolStripLblTotal.Text = String.Format("de {0}", depensesBindingSource.Count);
 
-            var nomCompletEmp = (from employe in dataContext.Employes
-                                from service in dataContext.Services
-                                where service.No == int.Parse(txtNo.Text)
-                                && service.NoEmploye == employe.No
-                                select new {nomComplet =  employe.Nom + " " + employe.Prenom}).FirstOrDefault();
+            if(txtNo.Text != "")
+            {
+                var nomCompletEmp = (from employe in dataContext.Employes
+                                     from service in dataContext.Services
+                                     where service.No == int.Parse(txtNo.Text)
+                                     && service.NoEmploye == employe.No
+                                     select new { nomComplet = employe.Nom + " " + employe.Prenom }).FirstOrDefault();
 
-            txtNomComplet.Text = nomCompletEmp.nomComplet;
+                txtNomComplet.Text = nomCompletEmp.nomComplet;
+            }
         }
 
         private void BtnPremier_Click(object sender, EventArgs e)

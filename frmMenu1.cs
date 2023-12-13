@@ -124,5 +124,13 @@ namespace ProjetFinal
                 Application.Exit();
         }
 
+        private void frmMenu1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Êtes-vous sûr.e de vouloir quitter l'application ?", "Fermeture de l'application", MessageBoxButtons.OKCancel,
+           MessageBoxIcon.Question);
+
+            if (result == DialogResult.OK)
+                Application.Exit();
+        }
     }
 }

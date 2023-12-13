@@ -92,7 +92,6 @@ namespace ProjetFinal
                     }
 
                     porteTransaction.Complete();
-                    this.Close();
                 }
             }
             else

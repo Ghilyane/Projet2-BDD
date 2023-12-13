@@ -123,7 +123,7 @@ namespace ProjetFinal
             {
                 cbService.Enabled = false;
                 cbService.Items.Add("Magasin Pro Shop");
-
+                cbService.Text = "Magasin Pro Shop";
             }
             else if (intTypeEmploye == 6)
             {
@@ -145,6 +145,11 @@ namespace ProjetFinal
             cbAbonnement.SelectedValue = "Value";
 
             txtNo.Text = (dataContext.Depenses.Count() + 1).ToString();
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

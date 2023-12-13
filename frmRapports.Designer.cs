@@ -51,7 +51,6 @@
             this.dateDepenseDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txtTypeService = new System.Windows.Forms.TextBox();
             this.txtNomAbonne = new System.Windows.Forms.TextBox();
-            this.lblAffiche = new System.Windows.Forms.Label();
             this.txtRecherche = new System.Windows.Forms.TextBox();
             this.btnRechercher = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -73,12 +72,15 @@
             this.lblTerrain = new System.Windows.Forms.Label();
             this.txtTerrain = new System.Windows.Forms.TextBox();
             this.txtIdAbonnementPartie = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblAffiche = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMontant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.depensesBindingSource)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.partiesJoueesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPointage)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNomEmploye
@@ -159,10 +161,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rapportDesDépensesToolStripMenuItem,
             this.rapportPartiesJouéesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 493);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 495);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(809, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(809, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -173,7 +175,7 @@
             this.dépensesParAnnéeToolStripMenuItem,
             this.dépensesParEmployéToolStripMenuItem});
             this.rapportDesDépensesToolStripMenuItem.Name = "rapportDesDépensesToolStripMenuItem";
-            this.rapportDesDépensesToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.rapportDesDépensesToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.rapportDesDépensesToolStripMenuItem.Text = "Rapport des dépenses";
             // 
             // dépensesParAbonnementToolStripMenuItem
@@ -204,7 +206,7 @@
             this.partiesJouéesParAbonnementToolStripMenuItem,
             this.partiesJouéesParAnnéeToolStripMenuItem});
             this.rapportPartiesJouéesToolStripMenuItem.Name = "rapportPartiesJouéesToolStripMenuItem";
-            this.rapportPartiesJouéesToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.rapportPartiesJouéesToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
             this.rapportPartiesJouéesToolStripMenuItem.Text = "Rapport parties jouées";
             // 
             // partiesJouéesParTerrainToolStripMenuItem
@@ -291,20 +293,6 @@
             this.txtNomAbonne.TabIndex = 62;
             this.txtNomAbonne.Visible = false;
             // 
-            // lblAffiche
-            // 
-            this.lblAffiche.AutoSize = true;
-            this.lblAffiche.BackColor = System.Drawing.Color.Transparent;
-            this.lblAffiche.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAffiche.ForeColor = System.Drawing.Color.Black;
-            this.lblAffiche.Location = new System.Drawing.Point(197, 53);
-            this.lblAffiche.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.lblAffiche.Name = "lblAffiche";
-            this.lblAffiche.Size = new System.Drawing.Size(118, 31);
-            this.lblAffiche.TabIndex = 63;
-            this.lblAffiche.Text = "Rapport";
-            this.lblAffiche.Visible = false;
-            // 
             // txtRecherche
             // 
             this.txtRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -342,7 +330,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(809, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(809, 27);
             this.toolStrip1.TabIndex = 67;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -352,7 +340,7 @@
             this.BtnPremier.Image = ((System.Drawing.Image)(resources.GetObject("BtnPremier.Image")));
             this.BtnPremier.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnPremier.Name = "BtnPremier";
-            this.BtnPremier.Size = new System.Drawing.Size(29, 28);
+            this.BtnPremier.Size = new System.Drawing.Size(29, 24);
             this.BtnPremier.Text = "toolStripButton1";
             this.BtnPremier.Click += new System.EventHandler(this.BtnPremier_Click);
             // 
@@ -362,32 +350,32 @@
             this.BtnPrecedent.Image = ((System.Drawing.Image)(resources.GetObject("BtnPrecedent.Image")));
             this.BtnPrecedent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnPrecedent.Name = "BtnPrecedent";
-            this.BtnPrecedent.Size = new System.Drawing.Size(29, 28);
+            this.BtnPrecedent.Size = new System.Drawing.Size(29, 24);
             this.BtnPrecedent.Text = "toolStripButton2";
             this.BtnPrecedent.Click += new System.EventHandler(this.BtnPrecedent_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // tbIndex
             // 
             this.tbIndex.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbIndex.Name = "tbIndex";
-            this.tbIndex.Size = new System.Drawing.Size(204, 31);
+            this.tbIndex.Size = new System.Drawing.Size(204, 27);
             this.tbIndex.TextChanged += new System.EventHandler(this.tbIndex_TextChanged);
             // 
             // toolStripLblTotal
             // 
             this.toolStripLblTotal.Name = "toolStripLblTotal";
-            this.toolStripLblTotal.Size = new System.Drawing.Size(48, 28);
+            this.toolStripLblTotal.Size = new System.Drawing.Size(48, 24);
             this.toolStripLblTotal.Text = "de {0}";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // BtnSuivant
             // 
@@ -395,7 +383,7 @@
             this.BtnSuivant.Image = ((System.Drawing.Image)(resources.GetObject("BtnSuivant.Image")));
             this.BtnSuivant.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnSuivant.Name = "BtnSuivant";
-            this.BtnSuivant.Size = new System.Drawing.Size(29, 28);
+            this.BtnSuivant.Size = new System.Drawing.Size(29, 24);
             this.BtnSuivant.Text = "toolStripButton3";
             this.BtnSuivant.Click += new System.EventHandler(this.BtnSuivant_Click);
             // 
@@ -405,7 +393,7 @@
             this.BtnDernier.Image = ((System.Drawing.Image)(resources.GetObject("BtnDernier.Image")));
             this.BtnDernier.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnDernier.Name = "BtnDernier";
-            this.BtnDernier.Size = new System.Drawing.Size(29, 28);
+            this.BtnDernier.Size = new System.Drawing.Size(29, 24);
             this.BtnDernier.Text = "toolStripButton4";
             this.BtnDernier.Click += new System.EventHandler(this.BtnDernier_Click);
             // 
@@ -496,11 +484,34 @@
             this.txtIdAbonnementPartie.Size = new System.Drawing.Size(100, 24);
             this.txtIdAbonnementPartie.TabIndex = 75;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.lblAffiche);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 27);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(809, 48);
+            this.panel1.TabIndex = 76;
+            // 
+            // lblAffiche
+            // 
+            this.lblAffiche.AutoSize = true;
+            this.lblAffiche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAffiche.Location = new System.Drawing.Point(161, 11);
+            this.lblAffiche.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAffiche.Name = "lblAffiche";
+            this.lblAffiche.Size = new System.Drawing.Size(87, 25);
+            this.lblAffiche.TabIndex = 0;
+            this.lblAffiche.Text = "Rapport";
+            // 
             // frmRapports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 523);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtIdAbonnementPartie);
             this.Controls.Add(this.lblTerrain);
             this.Controls.Add(this.txtTerrain);
@@ -514,7 +525,6 @@
             this.Controls.Add(this.btnRechercher);
             this.Controls.Add(this.txtRecherche);
             this.Controls.Add(this.lblRecherche);
-            this.Controls.Add(this.lblAffiche);
             this.Controls.Add(this.txtNomAbonne);
             this.Controls.Add(this.lblNomAbonne);
             this.Controls.Add(this.lblTypeService);
@@ -540,6 +550,8 @@
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.partiesJoueesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPointage)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,7 +574,6 @@
         private System.Windows.Forms.DateTimePicker dateDepenseDateTimePicker;
         private System.Windows.Forms.TextBox txtTypeService;
         private System.Windows.Forms.TextBox txtNomAbonne;
-        private System.Windows.Forms.Label lblAffiche;
         private System.Windows.Forms.TextBox txtRecherche;
         private System.Windows.Forms.Button btnRechercher;
         private System.Windows.Forms.ToolStrip toolStrip1;
@@ -590,5 +601,7 @@
         private System.Windows.Forms.Label lblPointage;
         private System.Windows.Forms.Label lblTerrain;
         private System.Windows.Forms.TextBox txtIdAbonnementPartie;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblAffiche;
     }
 }

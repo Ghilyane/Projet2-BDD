@@ -80,6 +80,7 @@ namespace ProjetFinal
             strTypeRapport = "terrain";
             verification(strNomRapport, strTypeRapport);
             partiesJoueesBindingSource.ResetBindings(false);
+            locker = false;
             toolStripLblTotal.Text = String.Format("de {0}", 0);
             tbIndex.Text = "";
             txtNomAbonne.Text = "";
@@ -93,6 +94,7 @@ namespace ProjetFinal
             strTypeRapport = "abonne";
             verification(strNomRapport, strTypeRapport);
             partiesJoueesBindingSource.ResetBindings(false);
+            locker = false;
             toolStripLblTotal.Text = String.Format("de {0}", 0);
             tbIndex.Text = "";
             txtNomAbonne.Text = "";
@@ -106,6 +108,7 @@ namespace ProjetFinal
             strTypeRapport = "annee";
             verification(strNomRapport, strTypeRapport);
             partiesJoueesBindingSource.ResetBindings(false);
+            locker = false;
             toolStripLblTotal.Text = String.Format("de {0}", 0);
             tbIndex.Text = "";
             txtNomAbonne.Text = "";
@@ -454,8 +457,9 @@ namespace ProjetFinal
 
         private void frmRapports_Load(object sender, EventArgs e)
         {
-            txtIdAbonne.Visible = true;
-            txtNoEmp.Visible = true;
+            txtIdAbonne.Visible = false;
+            txtNoEmp.Visible = false;
+            txtIdAbonnementPartie.Visible = false;
             toolStrip1.Visible = false;
               
         }
