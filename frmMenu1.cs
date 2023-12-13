@@ -13,6 +13,7 @@ namespace ProjetFinal
     public partial class frmMenu1 : Form
     {
         public int intTypeEmploye;
+        public int noTypeEmploye;
         public string prenomEmploye;
         public int intNoEmploye { get; set; }
 
@@ -82,7 +83,9 @@ namespace ProjetFinal
 
         private void btnDepenses_Click(object sender, EventArgs e)
         {
-            ajouterForm(new frmDepenses(), this.btnDepenses);
+            frmDepenses frmD = new frmDepenses();
+            frmD.intTypeEmploye = noTypeEmploye;
+            ajouterForm(frmD, this.btnDepenses);
         }
 
         private void btnRappors_Click(object sender, EventArgs e)

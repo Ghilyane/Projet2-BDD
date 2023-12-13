@@ -39,24 +39,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDepenses));
             this.label1 = new System.Windows.Forms.Label();
             this.dateDepenseDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.depensesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idAbonnementTextBox = new System.Windows.Forms.TextBox();
             this.txtNo = new System.Windows.Forms.TextBox();
             this.noServiceTextBox = new System.Windows.Forms.TextBox();
             this.remarqueTextBox = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.BtnPremier = new System.Windows.Forms.ToolStripButton();
-            this.BtnPrecedent = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tbIndex = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLblTotal = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnSuivant = new System.Windows.Forms.ToolStripButton();
-            this.BtnDernier = new System.Windows.Forms.ToolStripButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.txtNomComplet = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.depensesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BtnPremier = new System.Windows.Forms.ToolStripButton();
+            this.BtnPrecedent = new System.Windows.Forms.ToolStripButton();
+            this.BtnSuivant = new System.Windows.Forms.ToolStripButton();
+            this.BtnDernier = new System.Windows.Forms.ToolStripButton();
             dateDepenseLabel = new System.Windows.Forms.Label();
             idAbonnementLabel = new System.Windows.Forms.Label();
             montantLabel = new System.Windows.Forms.Label();
@@ -64,14 +64,11 @@
             noServiceLabel = new System.Windows.Forms.Label();
             remarqueLabel = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.depensesBindingSource)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depensesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-
-            // frmDepenses
-
             // dateDepenseLabel
             // 
             dateDepenseLabel.AutoSize = true;
@@ -165,35 +162,32 @@
             // dateDepenseDateTimePicker
             // 
             this.dateDepenseDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.depensesBindingSource, "DateDepense", true));
+            this.dateDepenseDateTimePicker.Enabled = false;
             this.dateDepenseDateTimePicker.Location = new System.Drawing.Point(149, 102);
             this.dateDepenseDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateDepenseDateTimePicker.Name = "dateDepenseDateTimePicker";
             this.dateDepenseDateTimePicker.Size = new System.Drawing.Size(198, 27);
             this.dateDepenseDateTimePicker.TabIndex = 6;
             // 
-            // depensesBindingSource
-            // 
-            this.depensesBindingSource.DataSource = typeof(ProjetFinal.Depenses);
-            // 
             // idAbonnementTextBox
             // 
             this.idAbonnementTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.depensesBindingSource, "IdAbonnement", true));
-            this.idAbonnementTextBox.Enabled = false;
             this.idAbonnementTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idAbonnementTextBox.Location = new System.Drawing.Point(481, 198);
             this.idAbonnementTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idAbonnementTextBox.Name = "idAbonnementTextBox";
+            this.idAbonnementTextBox.ReadOnly = true;
             this.idAbonnementTextBox.Size = new System.Drawing.Size(124, 27);
             this.idAbonnementTextBox.TabIndex = 7;
             // 
             // txtNo
             // 
             this.txtNo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.depensesBindingSource, "No", true));
-            this.txtNo.Enabled = false;
             this.txtNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNo.Location = new System.Drawing.Point(129, 199);
             this.txtNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtNo.Name = "txtNo";
+            this.txtNo.ReadOnly = true;
             this.txtNo.Size = new System.Drawing.Size(78, 27);
             this.txtNo.TabIndex = 9;
             this.txtNo.TextChanged += new System.EventHandler(this.txtNo_TextChanged);
@@ -201,22 +195,22 @@
             // noServiceTextBox
             // 
             this.noServiceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.depensesBindingSource, "NoService", true));
-            this.noServiceTextBox.Enabled = false;
             this.noServiceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noServiceTextBox.Location = new System.Drawing.Point(129, 334);
             this.noServiceTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.noServiceTextBox.Name = "noServiceTextBox";
+            this.noServiceTextBox.ReadOnly = true;
             this.noServiceTextBox.Size = new System.Drawing.Size(124, 27);
             this.noServiceTextBox.TabIndex = 11;
             // 
             // remarqueTextBox
             // 
             this.remarqueTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.depensesBindingSource, "Remarque", true));
-            this.remarqueTextBox.Enabled = false;
             this.remarqueTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remarqueTextBox.Location = new System.Drawing.Point(129, 268);
             this.remarqueTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.remarqueTextBox.Name = "remarqueTextBox";
+            this.remarqueTextBox.ReadOnly = true;
             this.remarqueTextBox.Size = new System.Drawing.Size(178, 27);
             this.remarqueTextBox.TabIndex = 13;
             // 
@@ -233,74 +227,34 @@
             this.toolStripSeparator2,
             this.BtnSuivant,
             this.BtnDernier});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 495);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 491);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(730, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(730, 31);
             this.toolStrip1.TabIndex = 36;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // BtnPremier
-            // 
-            this.BtnPremier.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnPremier.Image = ((System.Drawing.Image)(resources.GetObject("BtnPremier.Image")));
-            this.BtnPremier.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnPremier.Name = "BtnPremier";
-            this.BtnPremier.Size = new System.Drawing.Size(29, 24);
-            this.BtnPremier.Text = "toolStripButton1";
-            this.BtnPremier.Click += new System.EventHandler(this.BtnPremier_Click);
-            // 
-            // BtnPrecedent
-            // 
-            this.BtnPrecedent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnPrecedent.Image = ((System.Drawing.Image)(resources.GetObject("BtnPrecedent.Image")));
-            this.BtnPrecedent.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnPrecedent.Name = "BtnPrecedent";
-            this.BtnPrecedent.Size = new System.Drawing.Size(29, 24);
-            this.BtnPrecedent.Text = "toolStripButton2";
-            this.BtnPrecedent.Click += new System.EventHandler(this.BtnPrecedent_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // tbIndex
             // 
             this.tbIndex.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbIndex.Name = "tbIndex";
-            this.tbIndex.Size = new System.Drawing.Size(164, 27);
+            this.tbIndex.Size = new System.Drawing.Size(164, 31);
             // 
             // toolStripLblTotal
             // 
             this.toolStripLblTotal.Name = "toolStripLblTotal";
-            this.toolStripLblTotal.Size = new System.Drawing.Size(48, 24);
+            this.toolStripLblTotal.Size = new System.Drawing.Size(48, 28);
             this.toolStripLblTotal.Text = "de {0}";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // BtnSuivant
-            // 
-            this.BtnSuivant.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnSuivant.Image = ((System.Drawing.Image)(resources.GetObject("BtnSuivant.Image")));
-            this.BtnSuivant.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnSuivant.Name = "BtnSuivant";
-            this.BtnSuivant.Size = new System.Drawing.Size(29, 24);
-            this.BtnSuivant.Text = "toolStripButton3";
-            this.BtnSuivant.Click += new System.EventHandler(this.BtnSuivant_Click);
-            // 
-            // BtnDernier
-            // 
-            this.BtnDernier.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnDernier.Image = ((System.Drawing.Image)(resources.GetObject("BtnDernier.Image")));
-            this.BtnDernier.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnDernier.Name = "BtnDernier";
-            this.BtnDernier.Size = new System.Drawing.Size(29, 24);
-            this.BtnDernier.Text = "toolStripButton4";
-            this.BtnDernier.Click += new System.EventHandler(this.BtnDernier_Click);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // label2
             // 
@@ -329,9 +283,9 @@
             // 
             // txtNomComplet
             // 
-            this.txtNomComplet.Enabled = false;
             this.txtNomComplet.Location = new System.Drawing.Point(481, 338);
             this.txtNomComplet.Name = "txtNomComplet";
+            this.txtNomComplet.ReadOnly = true;
             this.txtNomComplet.Size = new System.Drawing.Size(237, 27);
             this.txtNomComplet.TabIndex = 40;
             // 
@@ -339,7 +293,6 @@
             // 
             this.numericUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.depensesBindingSource, "Montant", true));
             this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.Enabled = false;
             this.numericUpDown1.Location = new System.Drawing.Point(481, 271);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1000,
@@ -347,9 +300,54 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.ReadOnly = true;
             this.numericUpDown1.Size = new System.Drawing.Size(124, 27);
             this.numericUpDown1.TabIndex = 41;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // depensesBindingSource
+            // 
+            this.depensesBindingSource.DataSource = typeof(ProjetFinal.Depenses);
+            // 
+            // BtnPremier
+            // 
+            this.BtnPremier.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnPremier.Image = ((System.Drawing.Image)(resources.GetObject("BtnPremier.Image")));
+            this.BtnPremier.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnPremier.Name = "BtnPremier";
+            this.BtnPremier.Size = new System.Drawing.Size(29, 28);
+            this.BtnPremier.Text = "toolStripButton1";
+            this.BtnPremier.Click += new System.EventHandler(this.BtnPremier_Click);
+            // 
+            // BtnPrecedent
+            // 
+            this.BtnPrecedent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnPrecedent.Image = ((System.Drawing.Image)(resources.GetObject("BtnPrecedent.Image")));
+            this.BtnPrecedent.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnPrecedent.Name = "BtnPrecedent";
+            this.BtnPrecedent.Size = new System.Drawing.Size(29, 28);
+            this.BtnPrecedent.Text = "toolStripButton2";
+            this.BtnPrecedent.Click += new System.EventHandler(this.BtnPrecedent_Click);
+            // 
+            // BtnSuivant
+            // 
+            this.BtnSuivant.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnSuivant.Image = ((System.Drawing.Image)(resources.GetObject("BtnSuivant.Image")));
+            this.BtnSuivant.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnSuivant.Name = "BtnSuivant";
+            this.BtnSuivant.Size = new System.Drawing.Size(29, 28);
+            this.BtnSuivant.Text = "toolStripButton3";
+            this.BtnSuivant.Click += new System.EventHandler(this.BtnSuivant_Click);
+            // 
+            // BtnDernier
+            // 
+            this.BtnDernier.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnDernier.Image = ((System.Drawing.Image)(resources.GetObject("BtnDernier.Image")));
+            this.BtnDernier.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnDernier.Name = "BtnDernier";
+            this.BtnDernier.Size = new System.Drawing.Size(29, 28);
+            this.BtnDernier.Text = "toolStripButton4";
+            this.BtnDernier.Click += new System.EventHandler(this.BtnDernier_Click);
             // 
             // frmDepenses
             // 
@@ -380,10 +378,10 @@
             this.Name = "frmDepenses";
             this.Text = "Depenses";
             this.Load += new System.EventHandler(this.frmDepenses_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.depensesBindingSource)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depensesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
