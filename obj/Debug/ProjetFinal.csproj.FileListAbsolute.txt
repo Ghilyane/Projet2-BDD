@@ -79,6 +79,7 @@ D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.AjoutPartiesDeGolf.resources
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutAbonnement.resources
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutDependant.resources
+D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutDepense.resources
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutEmploye.resources
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmDepenses.resources
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAbonnements.resources
@@ -97,4 +98,3 @@ D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.csproj.CoreCompileInputs.cache
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.exe
 D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.pdb
-D:\NotesGG\5-Automne2023\Base de données III\Projet2-BDD\obj\Debug\ProjetFinal.frmAjoutDepense.resources

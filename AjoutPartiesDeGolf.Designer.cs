@@ -142,6 +142,7 @@
             // 
             // cbAbonnement
             // 
+            this.cbAbonnement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAbonnement.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbAbonnement.FormattingEnabled = true;
             this.cbAbonnement.Location = new System.Drawing.Point(226, 112);
@@ -152,6 +153,7 @@
             // 
             // cbTerrain
             // 
+            this.cbTerrain.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTerrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTerrain.FormattingEnabled = true;
             this.cbTerrain.Location = new System.Drawing.Point(226, 211);

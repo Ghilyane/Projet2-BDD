@@ -33,14 +33,14 @@
             this.lblAffiche = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.abonnementsParAnnéeEtTypeDabonnementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parTypeDabonnementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parTypeDabonnementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partiesJouéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parAnnéeEtParTerrainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parMoisEtParTerrainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parAnnéeEtParTerrainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dépensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parAnnéeEtParAbonnementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parAnnéeEtParAbonnementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cbDonnees = new System.Windows.Forms.ComboBox();
             this.btnRechercher = new System.Windows.Forms.Button();
             this.txtRecherche = new System.Windows.Forms.TextBox();
@@ -102,17 +102,15 @@
             this.panel1.Controls.Add(this.lblAffiche);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(929, 48);
+            this.panel1.Size = new System.Drawing.Size(697, 39);
             this.panel1.TabIndex = 77;
             // 
             // lblAffiche
             // 
             this.lblAffiche.AutoSize = true;
             this.lblAffiche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAffiche.Location = new System.Drawing.Point(243, 9);
-            this.lblAffiche.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAffiche.Location = new System.Drawing.Point(182, 7);
             this.lblAffiche.Name = "lblAffiche";
             this.lblAffiche.Size = new System.Drawing.Size(0, 25);
             this.lblAffiche.TabIndex = 0;
@@ -125,9 +123,10 @@
             this.abonnementsParAnnéeEtTypeDabonnementsToolStripMenuItem,
             this.partiesJouéesToolStripMenuItem,
             this.dépensesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 512);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 409);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(929, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(697, 30);
             this.menuStrip1.TabIndex = 78;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -137,15 +136,8 @@
             this.parTToolStripMenuItem,
             this.parTypeDabonnementsToolStripMenuItem});
             this.abonnementsParAnnéeEtTypeDabonnementsToolStripMenuItem.Name = "abonnementsParAnnéeEtTypeDabonnementsToolStripMenuItem";
-            this.abonnementsParAnnéeEtTypeDabonnementsToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.abonnementsParAnnéeEtTypeDabonnementsToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
             this.abonnementsParAnnéeEtTypeDabonnementsToolStripMenuItem.Text = "Abonnements";
-            // 
-            // parTypeDabonnementsToolStripMenuItem
-            // 
-            this.parTypeDabonnementsToolStripMenuItem.Name = "parTypeDabonnementsToolStripMenuItem";
-            this.parTypeDabonnementsToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.parTypeDabonnementsToolStripMenuItem.Text = "Par année et par type d\'abonnements";
-            this.parTypeDabonnementsToolStripMenuItem.Click += new System.EventHandler(this.parTypeDabonnementsToolStripMenuItem_Click);
             // 
             // parTToolStripMenuItem
             // 
@@ -154,21 +146,21 @@
             this.parTToolStripMenuItem.Text = "Par mois et par type d\'abonnements";
             this.parTToolStripMenuItem.Click += new System.EventHandler(this.parTToolStripMenuItem_Click);
             // 
+            // parTypeDabonnementsToolStripMenuItem
+            // 
+            this.parTypeDabonnementsToolStripMenuItem.Name = "parTypeDabonnementsToolStripMenuItem";
+            this.parTypeDabonnementsToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
+            this.parTypeDabonnementsToolStripMenuItem.Text = "Par année et par type d\'abonnements";
+            this.parTypeDabonnementsToolStripMenuItem.Click += new System.EventHandler(this.parTypeDabonnementsToolStripMenuItem_Click);
+            // 
             // partiesJouéesToolStripMenuItem
             // 
             this.partiesJouéesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.parMoisEtParTerrainToolStripMenuItem,
             this.parAnnéeEtParTerrainToolStripMenuItem});
             this.partiesJouéesToolStripMenuItem.Name = "partiesJouéesToolStripMenuItem";
-            this.partiesJouéesToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.partiesJouéesToolStripMenuItem.Size = new System.Drawing.Size(113, 26);
             this.partiesJouéesToolStripMenuItem.Text = "Parties jouées";
-            // 
-            // parAnnéeEtParTerrainToolStripMenuItem
-            // 
-            this.parAnnéeEtParTerrainToolStripMenuItem.Name = "parAnnéeEtParTerrainToolStripMenuItem";
-            this.parAnnéeEtParTerrainToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
-            this.parAnnéeEtParTerrainToolStripMenuItem.Text = "Par année et par terrain";
-            this.parAnnéeEtParTerrainToolStripMenuItem.Click += new System.EventHandler(this.parAnnéeEtParTerrainToolStripMenuItem_Click);
             // 
             // parMoisEtParTerrainToolStripMenuItem
             // 
@@ -177,21 +169,21 @@
             this.parMoisEtParTerrainToolStripMenuItem.Text = "par mois et par terrain";
             this.parMoisEtParTerrainToolStripMenuItem.Click += new System.EventHandler(this.parMoisEtParTerrainToolStripMenuItem_Click);
             // 
+            // parAnnéeEtParTerrainToolStripMenuItem
+            // 
+            this.parAnnéeEtParTerrainToolStripMenuItem.Name = "parAnnéeEtParTerrainToolStripMenuItem";
+            this.parAnnéeEtParTerrainToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
+            this.parAnnéeEtParTerrainToolStripMenuItem.Text = "Par année et par terrain";
+            this.parAnnéeEtParTerrainToolStripMenuItem.Click += new System.EventHandler(this.parAnnéeEtParTerrainToolStripMenuItem_Click);
+            // 
             // dépensesToolStripMenuItem
             // 
             this.dépensesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.paToolStripMenuItem,
             this.parAnnéeEtParAbonnementToolStripMenuItem});
             this.dépensesToolStripMenuItem.Name = "dépensesToolStripMenuItem";
-            this.dépensesToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.dépensesToolStripMenuItem.Size = new System.Drawing.Size(87, 26);
             this.dépensesToolStripMenuItem.Text = "Dépenses";
-            // 
-            // parAnnéeEtParAbonnementToolStripMenuItem
-            // 
-            this.parAnnéeEtParAbonnementToolStripMenuItem.Name = "parAnnéeEtParAbonnementToolStripMenuItem";
-            this.parAnnéeEtParAbonnementToolStripMenuItem.Size = new System.Drawing.Size(289, 26);
-            this.parAnnéeEtParAbonnementToolStripMenuItem.Text = "par année et par abonnement";
-            this.parAnnéeEtParAbonnementToolStripMenuItem.Click += new System.EventHandler(this.parAnnéeEtParAbonnementToolStripMenuItem_Click);
             // 
             // paToolStripMenuItem
             // 
@@ -200,22 +192,32 @@
             this.paToolStripMenuItem.Text = "Par mois et par abonnement";
             this.paToolStripMenuItem.Click += new System.EventHandler(this.paToolStripMenuItem_Click);
             // 
+            // parAnnéeEtParAbonnementToolStripMenuItem
+            // 
+            this.parAnnéeEtParAbonnementToolStripMenuItem.Name = "parAnnéeEtParAbonnementToolStripMenuItem";
+            this.parAnnéeEtParAbonnementToolStripMenuItem.Size = new System.Drawing.Size(289, 26);
+            this.parAnnéeEtParAbonnementToolStripMenuItem.Text = "par année et par abonnement";
+            this.parAnnéeEtParAbonnementToolStripMenuItem.Click += new System.EventHandler(this.parAnnéeEtParAbonnementToolStripMenuItem_Click);
+            // 
             // cbDonnees
             // 
+            this.cbDonnees.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDonnees.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDonnees.FormattingEnabled = true;
-            this.cbDonnees.Location = new System.Drawing.Point(473, 97);
+            this.cbDonnees.Location = new System.Drawing.Point(355, 79);
+            this.cbDonnees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbDonnees.Name = "cbDonnees";
-            this.cbDonnees.Size = new System.Drawing.Size(257, 28);
+            this.cbDonnees.Size = new System.Drawing.Size(194, 28);
             this.cbDonnees.TabIndex = 79;
             this.cbDonnees.TextChanged += new System.EventHandler(this.cbDonnees_TextChanged);
             // 
             // btnRechercher
             // 
             this.btnRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRechercher.Location = new System.Drawing.Point(754, 93);
+            this.btnRechercher.Location = new System.Drawing.Point(566, 76);
+            this.btnRechercher.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRechercher.Name = "btnRechercher";
-            this.btnRechercher.Size = new System.Drawing.Size(163, 34);
+            this.btnRechercher.Size = new System.Drawing.Size(122, 28);
             this.btnRechercher.TabIndex = 82;
             this.btnRechercher.Text = "Rechercher";
             this.btnRechercher.UseVisualStyleBackColor = true;
@@ -224,17 +226,17 @@
             // txtRecherche
             // 
             this.txtRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecherche.Location = new System.Drawing.Point(354, 97);
+            this.txtRecherche.Location = new System.Drawing.Point(266, 79);
+            this.txtRecherche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRecherche.Name = "txtRecherche";
-            this.txtRecherche.Size = new System.Drawing.Size(91, 27);
+            this.txtRecherche.Size = new System.Drawing.Size(69, 27);
             this.txtRecherche.TabIndex = 81;
             // 
             // lblRecherche
             // 
             this.lblRecherche.AutoSize = true;
             this.lblRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecherche.Location = new System.Drawing.Point(56, 106);
-            this.lblRecherche.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRecherche.Location = new System.Drawing.Point(42, 86);
             this.lblRecherche.Name = "lblRecherche";
             this.lblRecherche.Size = new System.Drawing.Size(0, 16);
             this.lblRecherche.TabIndex = 80;
@@ -269,11 +271,12 @@
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18});
             this.dgAbonnement.DataSource = this.abonnementsBindingSource;
-            this.dgAbonnement.Location = new System.Drawing.Point(15, 157);
+            this.dgAbonnement.Location = new System.Drawing.Point(11, 128);
+            this.dgAbonnement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgAbonnement.Name = "dgAbonnement";
             this.dgAbonnement.RowHeadersWidth = 51;
             this.dgAbonnement.RowTemplate.Height = 24;
-            this.dgAbonnement.Size = new System.Drawing.Size(905, 259);
+            this.dgAbonnement.Size = new System.Drawing.Size(679, 210);
             this.dgAbonnement.TabIndex = 83;
             // 
             // dataGridViewTextBoxColumn1
@@ -282,7 +285,7 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 47;
+            this.dataGridViewTextBoxColumn1.Width = 46;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -290,7 +293,7 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "DateAbonnement";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 141;
+            this.dataGridViewTextBoxColumn2.Width = 132;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -298,7 +301,7 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Nom";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 65;
+            this.dataGridViewTextBoxColumn3.Width = 63;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -306,7 +309,7 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Prenom";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 83;
+            this.dataGridViewTextBoxColumn4.Width = 80;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -314,7 +317,7 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "Sexe";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 67;
+            this.dataGridViewTextBoxColumn5.Width = 64;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -322,7 +325,7 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "DateNaissance";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 130;
+            this.dataGridViewTextBoxColumn6.Width = 120;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -330,7 +333,7 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "NoCivique";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 99;
+            this.dataGridViewTextBoxColumn7.Width = 92;
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -338,7 +341,7 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "Rue";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 61;
+            this.dataGridViewTextBoxColumn8.Width = 59;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -346,7 +349,7 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "Ville";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 62;
+            this.dataGridViewTextBoxColumn9.Width = 59;
             // 
             // dataGridViewTextBoxColumn10
             // 
@@ -354,6 +357,7 @@
             this.dataGridViewTextBoxColumn10.HeaderText = "IdProvince";
             this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 93;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -361,7 +365,7 @@
             this.dataGridViewTextBoxColumn11.HeaderText = "CodePostal";
             this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 107;
+            this.dataGridViewTextBoxColumn11.Width = 99;
             // 
             // dataGridViewTextBoxColumn12
             // 
@@ -369,7 +373,7 @@
             this.dataGridViewTextBoxColumn12.HeaderText = "Telephone";
             this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 102;
+            this.dataGridViewTextBoxColumn12.Width = 95;
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -377,7 +381,7 @@
             this.dataGridViewTextBoxColumn13.HeaderText = "Cellulaire";
             this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 92;
+            this.dataGridViewTextBoxColumn13.Width = 88;
             // 
             // dataGridViewTextBoxColumn14
             // 
@@ -385,7 +389,7 @@
             this.dataGridViewTextBoxColumn14.HeaderText = "Courriel";
             this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 82;
+            this.dataGridViewTextBoxColumn14.Width = 79;
             // 
             // dataGridViewTextBoxColumn15
             // 
@@ -393,7 +397,7 @@
             this.dataGridViewTextBoxColumn15.HeaderText = "NoTypeAbonnement";
             this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 162;
+            this.dataGridViewTextBoxColumn15.Width = 148;
             // 
             // dataGridViewTextBoxColumn16
             // 
@@ -401,6 +405,7 @@
             this.dataGridViewTextBoxColumn16.HeaderText = "Remarque";
             this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 95;
             // 
             // dataGridViewTextBoxColumn17
             // 
@@ -408,7 +413,7 @@
             this.dataGridViewTextBoxColumn17.HeaderText = "Provinces";
             this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.Width = 96;
+            this.dataGridViewTextBoxColumn17.Width = 89;
             // 
             // dataGridViewTextBoxColumn18
             // 
@@ -416,7 +421,7 @@
             this.dataGridViewTextBoxColumn18.HeaderText = "TypesAbonnement";
             this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 151;
+            this.dataGridViewTextBoxColumn18.Width = 138;
             // 
             // partiesJoueesBindingSource
             // 
@@ -435,11 +440,12 @@
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25});
             this.dgPartiesJouees.DataSource = this.partiesJoueesBindingSource;
-            this.dgPartiesJouees.Location = new System.Drawing.Point(15, 157);
+            this.dgPartiesJouees.Location = new System.Drawing.Point(11, 128);
+            this.dgPartiesJouees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgPartiesJouees.Name = "dgPartiesJouees";
             this.dgPartiesJouees.RowHeadersWidth = 51;
             this.dgPartiesJouees.RowTemplate.Height = 24;
-            this.dgPartiesJouees.Size = new System.Drawing.Size(905, 259);
+            this.dgPartiesJouees.Size = new System.Drawing.Size(679, 210);
             this.dgPartiesJouees.TabIndex = 83;
             // 
             // dataGridViewTextBoxColumn19
@@ -516,11 +522,12 @@
             this.dataGridViewTextBoxColumn32,
             this.dataGridViewTextBoxColumn33});
             this.dgDepenses.DataSource = this.depensesBindingSource;
-            this.dgDepenses.Location = new System.Drawing.Point(15, 157);
+            this.dgDepenses.Location = new System.Drawing.Point(11, 128);
+            this.dgDepenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgDepenses.Name = "dgDepenses";
             this.dgDepenses.RowHeadersWidth = 51;
             this.dgDepenses.RowTemplate.Height = 24;
-            this.dgDepenses.Size = new System.Drawing.Size(905, 259);
+            this.dgDepenses.Size = new System.Drawing.Size(679, 210);
             this.dgDepenses.TabIndex = 83;
             // 
             // dataGridViewTextBoxColumn26
@@ -591,7 +598,8 @@
             // 
             this.lblSousTotal.AutoSize = true;
             this.lblSousTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSousTotal.Location = new System.Drawing.Point(12, 434);
+            this.lblSousTotal.Location = new System.Drawing.Point(9, 353);
+            this.lblSousTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSousTotal.Name = "lblSousTotal";
             this.lblSousTotal.Size = new System.Drawing.Size(90, 18);
             this.lblSousTotal.TabIndex = 84;
@@ -601,7 +609,8 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(12, 475);
+            this.lblTotal.Location = new System.Drawing.Point(9, 386);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(51, 18);
             this.lblTotal.TabIndex = 85;
@@ -609,9 +618,9 @@
             // 
             // frmStats
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 540);
+            this.ClientSize = new System.Drawing.Size(697, 439);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblSousTotal);
             this.Controls.Add(this.dgDepenses);
@@ -625,6 +634,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmStats";
             this.Text = "frmStats";
             this.Load += new System.EventHandler(this.frmStats_Load);

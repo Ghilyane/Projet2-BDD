@@ -56,8 +56,7 @@
             label4.BackColor = System.Drawing.Color.Transparent;
             label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label4.ForeColor = System.Drawing.Color.Black;
-            label4.Location = new System.Drawing.Point(79, 224);
-            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Location = new System.Drawing.Point(59, 182);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(46, 25);
             label4.TabIndex = 19;
@@ -66,10 +65,10 @@
             // btnAnnuler
             // 
             this.btnAnnuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnnuler.Location = new System.Drawing.Point(723, 458);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAnnuler.Location = new System.Drawing.Point(542, 372);
+            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(195, 34);
+            this.btnAnnuler.Size = new System.Drawing.Size(146, 28);
             this.btnAnnuler.TabIndex = 27;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
@@ -78,10 +77,10 @@
             // btnAjouter
             // 
             this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouter.Location = new System.Drawing.Point(331, 458);
-            this.btnAjouter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAjouter.Location = new System.Drawing.Point(248, 372);
+            this.btnAjouter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(191, 34);
+            this.btnAjouter.Size = new System.Drawing.Size(143, 28);
             this.btnAjouter.TabIndex = 26;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -91,20 +90,19 @@
             // 
             this.dateDepense.Enabled = false;
             this.dateDepense.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateDepense.Location = new System.Drawing.Point(861, 126);
-            this.dateDepense.Margin = new System.Windows.Forms.Padding(4);
+            this.dateDepense.Location = new System.Drawing.Point(646, 102);
             this.dateDepense.Name = "dateDepense";
-            this.dateDepense.Size = new System.Drawing.Size(297, 26);
+            this.dateDepense.Size = new System.Drawing.Size(224, 26);
             this.dateDepense.TabIndex = 25;
             // 
             // cbAbonnement
             // 
+            this.cbAbonnement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAbonnement.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbAbonnement.FormattingEnabled = true;
-            this.cbAbonnement.Location = new System.Drawing.Point(293, 128);
-            this.cbAbonnement.Margin = new System.Windows.Forms.Padding(4);
+            this.cbAbonnement.Location = new System.Drawing.Point(220, 104);
             this.cbAbonnement.Name = "cbAbonnement";
-            this.cbAbonnement.Size = new System.Drawing.Size(228, 28);
+            this.cbAbonnement.Size = new System.Drawing.Size(172, 28);
             this.cbAbonnement.TabIndex = 22;
             // 
             // label6
@@ -113,8 +111,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(79, 331);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(59, 269);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 25);
             this.label6.TabIndex = 21;
@@ -126,8 +123,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(85, 129);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(64, 105);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(141, 25);
             this.label5.TabIndex = 20;
@@ -139,8 +135,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(612, 127);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(459, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(206, 25);
             this.label3.TabIndex = 18;
@@ -152,8 +147,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(617, 224);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(463, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 17;
@@ -165,8 +159,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(503, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(377, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 31);
             this.label1.TabIndex = 16;
@@ -181,34 +174,31 @@
             0,
             0,
             65536});
-            this.nudMontant.Location = new System.Drawing.Point(293, 334);
-            this.nudMontant.Margin = new System.Windows.Forms.Padding(4);
+            this.nudMontant.Location = new System.Drawing.Point(220, 271);
             this.nudMontant.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.nudMontant.Name = "nudMontant";
-            this.nudMontant.Size = new System.Drawing.Size(180, 26);
+            this.nudMontant.Size = new System.Drawing.Size(135, 26);
             this.nudMontant.TabIndex = 15;
             // 
             // txtNo
             // 
             this.txtNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNo.Location = new System.Drawing.Point(293, 225);
-            this.txtNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNo.Location = new System.Drawing.Point(220, 183);
             this.txtNo.Name = "txtNo";
             this.txtNo.ReadOnly = true;
-            this.txtNo.Size = new System.Drawing.Size(59, 26);
+            this.txtNo.Size = new System.Drawing.Size(45, 26);
             this.txtNo.TabIndex = 28;
             // 
             // txtRemarque
             // 
             this.txtRemarque.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRemarque.Location = new System.Drawing.Point(861, 331);
-            this.txtRemarque.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRemarque.Location = new System.Drawing.Point(646, 269);
             this.txtRemarque.Name = "txtRemarque";
-            this.txtRemarque.Size = new System.Drawing.Size(232, 26);
+            this.txtRemarque.Size = new System.Drawing.Size(175, 26);
             this.txtRemarque.TabIndex = 30;
             // 
             // label7
@@ -217,8 +207,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(617, 331);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(463, 269);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(117, 25);
             this.label7.TabIndex = 29;
@@ -226,13 +215,13 @@
             // 
             // cbService
             // 
+            this.cbService.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbService.Enabled = false;
             this.cbService.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbService.FormattingEnabled = true;
-            this.cbService.Location = new System.Drawing.Point(861, 223);
-            this.cbService.Margin = new System.Windows.Forms.Padding(4);
+            this.cbService.Location = new System.Drawing.Point(646, 181);
             this.cbService.Name = "cbService";
-            this.cbService.Size = new System.Drawing.Size(297, 28);
+            this.cbService.Size = new System.Drawing.Size(224, 28);
             this.cbService.TabIndex = 31;
             // 
             // errMessage
@@ -241,9 +230,9 @@
             // 
             // frmAjoutDepense
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 554);
+            this.ClientSize = new System.Drawing.Size(892, 450);
             this.Controls.Add(this.cbService);
             this.Controls.Add(this.txtRemarque);
             this.Controls.Add(this.label7);
@@ -260,7 +249,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nudMontant);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAjoutDepense";
             this.Text = "frmAjoutDepense";
             this.Load += new System.EventHandler(this.frmAjoutDepense_Load);

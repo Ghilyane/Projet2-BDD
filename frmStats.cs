@@ -155,7 +155,7 @@ namespace ProjetFinal
         {
             if (typeStat == "Abonnement par année")
             {
-                if (txtRecherche.Text != "")
+                if (txtRecherche.Text != "" && int.TryParse(txtRecherche.Text, out _))
                 {
                     if (int.Parse(txtRecherche.Text) <= DateTime.Now.Year)
                     {
@@ -168,7 +168,7 @@ namespace ProjetFinal
                                                  select abonnement;
 
 
-                        lblTotal.Text = "Total: " + abonnementTotalParAnnee.Count() + " abonnement(s) éffectué(s) toutes années confondus.";
+                        lblTotal.Text = "Total: " + abonnementTotalParAnnee.Count() + " abonnement(s) éffectué(s) toutes années confondues.";
 
                         if (abonnementParAnnee.Any())
                         {
@@ -201,7 +201,7 @@ namespace ProjetFinal
             }
             else if (typeStat == "Abonnement par mois")
             {
-                if (txtRecherche.Text != "")
+                if (txtRecherche.Text != "" && int.TryParse(txtRecherche.Text, out _))
                 {
                     if (int.Parse(txtRecherche.Text) < 13 && int.Parse(txtRecherche.Text) > 0)
                     {
@@ -250,7 +250,7 @@ namespace ProjetFinal
             }
             else if (typeStat == "Parties par année")
             {
-                if (txtRecherche.Text != "")
+                if (txtRecherche.Text != "" && int.TryParse(txtRecherche.Text, out _))
                 {
                     if (int.Parse(txtRecherche.Text) <= DateTime.Now.Year)
                     {
@@ -263,7 +263,7 @@ namespace ProjetFinal
                                               select partie;
 
 
-                        lblTotal.Text = "Total: " + partiesTotalParAnnee.Count() + " partie(s) jouée(s) toutes années confondus.";
+                        lblTotal.Text = "Total: " + partiesTotalParAnnee.Count() + " partie(s) jouée(s) toutes années confondues.";
 
                         if (partiesParAnnee.Any())
                         {
@@ -296,7 +296,7 @@ namespace ProjetFinal
             }
             else if (typeStat == "Parties par mois")
             {
-                if (txtRecherche.Text != "")
+                if (txtRecherche.Text != "" && int.TryParse(txtRecherche.Text, out _))
                 {
                     if (int.Parse(txtRecherche.Text) < 13 && int.Parse(txtRecherche.Text) > 0)
                     {
@@ -345,7 +345,7 @@ namespace ProjetFinal
             }
             else if (typeStat == "Dépenses par année")
             {
-                if (txtRecherche.Text != "")
+                if (txtRecherche.Text != "" && int.TryParse(txtRecherche.Text, out _))
                 {
                     if (int.Parse(txtRecherche.Text) <= DateTime.Now.Year)
                     {
@@ -358,7 +358,7 @@ namespace ProjetFinal
                                               select depense;
 
 
-                        lblTotal.Text = "Total: " + depenseTotalParAnnee.Count() + " dépense(s) ont été éffectué toutes années confondus.";
+                        lblTotal.Text = "Total: " + depenseTotalParAnnee.Count() + " dépense(s) ont été éffectué toutes années confondues.";
 
                         if (depenseParAnnee.Any())
                         {
@@ -392,7 +392,7 @@ namespace ProjetFinal
             else if (typeStat == "Dépenses par mois")
             {
 
-                if (txtRecherche.Text != "")
+                if (txtRecherche.Text != "" && int.TryParse(txtRecherche.Text, out _))
                 {
                     if (int.Parse(txtRecherche.Text) < 13 && int.Parse(txtRecherche.Text) > 0)
                     {

@@ -100,7 +100,6 @@ namespace ProjetFinal
             booAbonnementPrincipalValide = validerAbonnementPrincipal();
             bool booDpendantsValide = dgDependantsErreur();
 
-
             //Transaction
             if (!booAbonnementPrincipalValide)
             {
@@ -157,6 +156,7 @@ namespace ProjetFinal
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Impossible de modifier la base de données");
+                        monDataContext.Abonnements.DeleteOnSubmit(nouvelAbonnement);
                     }
 
                 }
@@ -175,7 +175,6 @@ namespace ProjetFinal
         private void btnAjoutAbonnement_Click(object sender, EventArgs e)
         {
             booAbonnementPrincipalValide = validerAbonnementPrincipal();
-            MessageBox.Show(booAbonnementPrincipalValide.ToString());
             if (booAbonnementPrincipalValide)
             {
                 using (var porteTransaction = new TransactionScope())
@@ -193,14 +192,14 @@ namespace ProjetFinal
                         MessageBox.Show(ex.Message, "Impossible de modifier la base de données");
                     }
                 }
-            }
             this.Close();
 
+            }
         }
 
         private void cbTypeAbonnement_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //btnAjoutDependant.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? false : true;
+            btnAjoutDependant.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? false : true;
             //btnAjoutAbonnement.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? true : false;
             //dgDependants.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? false : true;
 
@@ -318,6 +317,8 @@ namespace ProjetFinal
 
             if (booValide)
             {
+                nouvelAbonnement = new Abonnements();
+                
                 nouvelAbonnement.NoTypeAbonnement = (int)cbTypeAbonnement.SelectedValue;
                 nouvelAbonnement.Id = $"{strNom}{intNoLien}P";
                 nouvelAbonnement.Nom = strNom;
