@@ -25,7 +25,6 @@ namespace ProjetFinal
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             cbAbonnement.Select();
-            MessageBox.Show(cbService.Text);
 
             var serviceExistant = (from service in dataContext.Services
                                   where service.NoEmploye == intTypeEmploye && service.TypeService == cbService.Text
@@ -111,7 +110,6 @@ namespace ProjetFinal
                 from abonnement in dataContext.Abonnements
                 select new { identifiant = abonnement.Id + "(" + abonnement.Nom + " " + abonnement.Prenom + ")", id = abonnement.Id, dateAbonnement = abonnement.DateAbonnement };
 
-            MessageBox.Show(intTypeEmploye.ToString());
             if (intTypeEmploye == 1 || intTypeEmploye == 2 || intTypeEmploye == 3)
             {
                 cbService.Enabled = true;

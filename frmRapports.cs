@@ -465,8 +465,6 @@ namespace ProjetFinal
         }
         private void tbIndex_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show((strNomRapport == "partie" && (strTypeRapport == "annee" || strTypeRapport == "abonne") && locker).ToString());
-
             if (strNomRapport == "depense" && strTypeRapport == "employe" && locker)
             {
                 var nomAbonne = (from abonne in dataContext.Abonnements
