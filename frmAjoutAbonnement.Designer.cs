@@ -34,7 +34,6 @@
             System.Windows.Forms.Label courrielLabel;
             System.Windows.Forms.Label dateAbonnementLabel;
             System.Windows.Forms.Label dateNaissanceLabel;
-            System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label idProvinceLabel;
             System.Windows.Forms.Label noCiviqueLabel;
             System.Windows.Forms.Label nomLabel;
@@ -50,7 +49,6 @@
             this.tbCourriel = new System.Windows.Forms.TextBox();
             this.dtpDateAbonnement = new System.Windows.Forms.DateTimePicker();
             this.dtpNaissance = new System.Windows.Forms.DateTimePicker();
-            this.tbID = new System.Windows.Forms.TextBox();
             this.tbNoCivique = new System.Windows.Forms.TextBox();
             this.tbNom = new System.Windows.Forms.TextBox();
             this.tbPrenom = new System.Windows.Forms.TextBox();
@@ -82,7 +80,6 @@
             courrielLabel = new System.Windows.Forms.Label();
             dateAbonnementLabel = new System.Windows.Forms.Label();
             dateNaissanceLabel = new System.Windows.Forms.Label();
-            idLabel = new System.Windows.Forms.Label();
             idProvinceLabel = new System.Windows.Forms.Label();
             noCiviqueLabel = new System.Windows.Forms.Label();
             nomLabel = new System.Windows.Forms.Label();
@@ -151,23 +148,12 @@
             // 
             dateNaissanceLabel.AutoSize = true;
             dateNaissanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            dateNaissanceLabel.Location = new System.Drawing.Point(31, 193);
+            dateNaissanceLabel.Location = new System.Drawing.Point(31, 167);
             dateNaissanceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             dateNaissanceLabel.Name = "dateNaissanceLabel";
             dateNaissanceLabel.Size = new System.Drawing.Size(170, 24);
             dateNaissanceLabel.TabIndex = 9;
             dateNaissanceLabel.Text = "Date de naissance:";
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            idLabel.Location = new System.Drawing.Point(31, 80);
-            idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(30, 24);
-            idLabel.TabIndex = 11;
-            idLabel.Text = "Id:";
             // 
             // idProvinceLabel
             // 
@@ -195,7 +181,7 @@
             // 
             nomLabel.AutoSize = true;
             nomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            nomLabel.Location = new System.Drawing.Point(31, 109);
+            nomLabel.Location = new System.Drawing.Point(31, 83);
             nomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nomLabel.Name = "nomLabel";
             nomLabel.Size = new System.Drawing.Size(56, 24);
@@ -217,7 +203,7 @@
             // 
             prenomLabel.AutoSize = true;
             prenomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            prenomLabel.Location = new System.Drawing.Point(31, 137);
+            prenomLabel.Location = new System.Drawing.Point(31, 111);
             prenomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             prenomLabel.Name = "prenomLabel";
             prenomLabel.Size = new System.Drawing.Size(82, 24);
@@ -250,7 +236,7 @@
             // 
             sexeLabel.AutoSize = true;
             sexeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            sexeLabel.Location = new System.Drawing.Point(31, 165);
+            sexeLabel.Location = new System.Drawing.Point(31, 139);
             sexeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             sexeLabel.Name = "sexeLabel";
             sexeLabel.Size = new System.Drawing.Size(59, 24);
@@ -324,22 +310,12 @@
             // dtpNaissance
             // 
             this.dtpNaissance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.dtpNaissance.Location = new System.Drawing.Point(170, 190);
+            this.dtpNaissance.Location = new System.Drawing.Point(170, 164);
             this.dtpNaissance.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNaissance.Name = "dtpNaissance";
             this.dtpNaissance.Size = new System.Drawing.Size(246, 28);
             this.dtpNaissance.TabIndex = 10;
             this.dtpNaissance.Value = new System.DateTime(1990, 11, 15, 8, 34, 0, 0);
-            // 
-            // tbID
-            // 
-            this.tbID.Enabled = false;
-            this.tbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.tbID.Location = new System.Drawing.Point(170, 76);
-            this.tbID.Margin = new System.Windows.Forms.Padding(2);
-            this.tbID.Name = "tbID";
-            this.tbID.Size = new System.Drawing.Size(246, 28);
-            this.tbID.TabIndex = 12;
             // 
             // tbNoCivique
             // 
@@ -354,7 +330,7 @@
             // tbNom
             // 
             this.tbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.tbNom.Location = new System.Drawing.Point(170, 106);
+            this.tbNom.Location = new System.Drawing.Point(170, 80);
             this.tbNom.Margin = new System.Windows.Forms.Padding(2);
             this.tbNom.Name = "tbNom";
             this.tbNom.Size = new System.Drawing.Size(246, 28);
@@ -364,7 +340,7 @@
             // tbPrenom
             // 
             this.tbPrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.tbPrenom.Location = new System.Drawing.Point(170, 135);
+            this.tbPrenom.Location = new System.Drawing.Point(170, 109);
             this.tbPrenom.Margin = new System.Windows.Forms.Padding(2);
             this.tbPrenom.Name = "tbPrenom";
             this.tbPrenom.Size = new System.Drawing.Size(246, 28);
@@ -484,7 +460,7 @@
             this.cbSexe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSexe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbSexe.FormattingEnabled = true;
-            this.cbSexe.Location = new System.Drawing.Point(170, 162);
+            this.cbSexe.Location = new System.Drawing.Point(170, 136);
             this.cbSexe.Margin = new System.Windows.Forms.Padding(2);
             this.cbSexe.Name = "cbSexe";
             this.cbSexe.Size = new System.Drawing.Size(246, 30);
@@ -608,6 +584,7 @@
             this.dgDate.HeaderText = "Date de naissance";
             this.dgDate.MinimumWidth = 6;
             this.dgDate.Name = "dgDate";
+            this.dgDate.ToolTipText = "dd-mm-yyyy";
             this.dgDate.Width = 127;
             // 
             // dgRemarque
@@ -644,8 +621,6 @@
             this.Controls.Add(this.dtpDateAbonnement);
             this.Controls.Add(dateNaissanceLabel);
             this.Controls.Add(this.dtpNaissance);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.tbID);
             this.Controls.Add(idProvinceLabel);
             this.Controls.Add(noCiviqueLabel);
             this.Controls.Add(this.tbNoCivique);
@@ -681,7 +656,6 @@
         private System.Windows.Forms.TextBox tbCourriel;
         private System.Windows.Forms.DateTimePicker dtpDateAbonnement;
         private System.Windows.Forms.DateTimePicker dtpNaissance;
-        private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.TextBox tbNoCivique;
         private System.Windows.Forms.TextBox tbNom;
         private System.Windows.Forms.TextBox tbPrenom;

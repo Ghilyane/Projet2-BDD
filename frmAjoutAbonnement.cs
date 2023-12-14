@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.Linq;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -28,37 +29,13 @@ namespace ProjetFinal
         public frmAjoutAbonnement()
         {
             InitializeComponent();
-
-            dgDependants.Controls.Add(dtp);
-            dtp.Visible = false;
-            dtp.Format = DateTimePickerFormat.Custom;
-            dtp.TextChanged += new EventHandler(dtp_TextChange);
-            dgDependants.Enabled = false;
-            dgDependants.AllowUserToAddRows = false;
         }
 
-        private void dtp_TextChange(Object sender, EventArgs e)
-        {
-            dgDependants.CurrentCell.Value = dtp.Text.ToString();
-        }
+        private void dtp_TextChange(Object sender, EventArgs e){}
 
-        private void dgDependants_Scroll(object sender, ScrollEventArgs e)
-        {
-            dtp.Visible = false;
-        }
+        private void dgDependants_Scroll(object sender, ScrollEventArgs e){}
 
-        private void dgDependants_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            switch (dgDependants.Columns[e.ColumnIndex].Name)
-            {
-                case "dgDate":
-                    _rectangle = dgDependants.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
-                    dtp.Size = new Size(_rectangle.Width, _rectangle.Height);
-                    dtp.Location = new Point(_rectangle.X, _rectangle.Y);
-                    dtp.Visible = true;
-                    break;
-            }
-        }
+        private void dgDependants_CellClick(object sender, DataGridViewCellEventArgs e){}
 
         private void frmAjoutAbonnement_Load(object sender, EventArgs e)
         {
@@ -73,6 +50,9 @@ namespace ProjetFinal
 
             cbSexeD.Items.Add("F");
             cbSexeD.Items.Add("H");
+
+            dgDependants.Visible = false;
+            btnAjoutDependant.Visible = false; 
         }
 
         private bool dgDependantsErreur()
@@ -220,9 +200,9 @@ namespace ProjetFinal
 
         private void cbTypeAbonnement_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnAjoutDependant.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? false : true;
-            btnAjoutAbonnement.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? true : false;
-            dgDependants.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? false : true;
+            //btnAjoutDependant.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? false : true;
+            //btnAjoutAbonnement.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? true : false;
+            //dgDependants.Enabled = (cbTypeAbonnement.SelectedValue.ToString() == "1" || cbTypeAbonnement.SelectedValue.ToString() == "2") ? false : true;
 
             int intTypeAbonnement = (int)cbTypeAbonnement.SelectedValue;
             
@@ -245,6 +225,9 @@ namespace ProjetFinal
                     break;
             }
 
+            dgDependants.Visible = (intTypeAbonnement == 1 || intTypeAbonnement == 2) ? false : true;
+            btnAjoutDependant.Visible = (intTypeAbonnement == 1 || intTypeAbonnement == 2) ? false : true;
+            btnAjoutAbonnement.Visible = (intTypeAbonnement == 1 || intTypeAbonnement == 2) ? true : false;
             majDgDependants();
         }
 
@@ -373,18 +356,19 @@ namespace ProjetFinal
 
         private void majDgDependants()
         {
-            dgDependants.AllowUserToAddRows = (intNbDependants >= dgDependants.RowCount) ? true : false;
-
+            dgDependants.AllowUserToAddRows = false;
             while (intNbDependants < dgDependants.RowCount && intNbDependants > 0)
             {
                 dgDependants.Rows.RemoveAt(dgDependants.Rows.Count - 1);
             }
+            dgDependants.AllowUserToAddRows = (intNbDependants >= dgDependants.RowCount) ? true : false;
         }
 
         private void dgDependants_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
         {
             booAbonnementDependantslValide = true;
             var exprNomPrenom = new Regex(@"^(([A-Z]|[a-z]|[À-Ü]|[à-ü])+([ '-]?([A-Z]|[a-z]|[À-Ü]|[à-ü])+)*)$");
+            var exprDate = new Regex(@"^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$");
 
             int intNoRow = e.RowIndex;
 
@@ -396,11 +380,18 @@ namespace ProjetFinal
             string strMessage = string.Empty;
 
             var dtAuj = DateTime.Today;
-            var dtNaissance = dtp.Value;
+            int intAge = 0;
+            DateTime dateNaissance;
 
-            int intAge = dtAuj.Year - dtNaissance.Year;
+            if (DateTime.TryParseExact(strDate, "dd-MM-yyyy",
+                       CultureInfo.InvariantCulture,
+                       DateTimeStyles.None, out dateNaissance))
+            {
 
-            if (dtNaissance.Date > dtAuj.AddYears(-intAge)) intAge--;
+                intAge = dtAuj.Year - dateNaissance.Year;
+
+                if (dateNaissance.Date > dtAuj.AddYears(-intAge)) intAge--;
+            }
 
 
             if (string.IsNullOrEmpty(strPrenom) || string.IsNullOrEmpty(strNom) || string.IsNullOrEmpty(strSexe) || string.IsNullOrEmpty(strDate))
@@ -425,6 +416,16 @@ namespace ProjetFinal
                 {
                     strMessage = "Le prénom peut seulement avoir des lettres, des tirets, des espaces et apostrophes.";
                 }
+                else if (!exprDate.IsMatch(strDate))
+                {
+                    strMessage = "La date doit respecter le format suivant : jj-mm-aaaa.";
+                }
+                else if (!DateTime.TryParseExact(strDate, "dd-MM-yyyy",
+                       CultureInfo.InvariantCulture,
+                       DateTimeStyles.None, out _))
+                {
+                    strMessage = "La date n'est pas valide.";
+                }
                 else if (intNoRow == 0)
                 {
                     if (intAge < 18 || intAge > 110)
@@ -442,10 +443,13 @@ namespace ProjetFinal
             }
             dgDependants.Rows[e.RowIndex].ErrorText = strMessage;
 
+            //MessageBox.Show($"Nom : '{strNom}'\nPrénom : '{strPrenom}'\nSexe : '{strSexe}'\nDate : '{strDate}'\nRemarque : '{strRemarque}'\nBooleen : {}");
             if (strMessage != string.Empty)
             {
                 e.Cancel = true;
             }
+
+
         }
 
         private void btnAnnuler_Click(object sender, EventArgs e)
