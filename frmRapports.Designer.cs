@@ -161,10 +161,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rapportDesDépensesToolStripMenuItem,
             this.rapportPartiesJouéesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 495);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 493);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(809, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(809, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -175,7 +175,7 @@
             this.dépensesParAnnéeToolStripMenuItem,
             this.dépensesParEmployéToolStripMenuItem});
             this.rapportDesDépensesToolStripMenuItem.Name = "rapportDesDépensesToolStripMenuItem";
-            this.rapportDesDépensesToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.rapportDesDépensesToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.rapportDesDépensesToolStripMenuItem.Text = "Rapport des dépenses";
             // 
             // dépensesParAbonnementToolStripMenuItem
@@ -206,7 +206,7 @@
             this.partiesJouéesParAbonnementToolStripMenuItem,
             this.partiesJouéesParAnnéeToolStripMenuItem});
             this.rapportPartiesJouéesToolStripMenuItem.Name = "rapportPartiesJouéesToolStripMenuItem";
-            this.rapportPartiesJouéesToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.rapportPartiesJouéesToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.rapportPartiesJouéesToolStripMenuItem.Text = "Rapport parties jouées";
             // 
             // partiesJouéesParTerrainToolStripMenuItem
@@ -330,7 +330,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(809, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(809, 31);
             this.toolStrip1.TabIndex = 67;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -340,7 +340,7 @@
             this.BtnPremier.Image = ((System.Drawing.Image)(resources.GetObject("BtnPremier.Image")));
             this.BtnPremier.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnPremier.Name = "BtnPremier";
-            this.BtnPremier.Size = new System.Drawing.Size(29, 24);
+            this.BtnPremier.Size = new System.Drawing.Size(29, 28);
             this.BtnPremier.Text = "toolStripButton1";
             this.BtnPremier.Click += new System.EventHandler(this.BtnPremier_Click);
             // 
@@ -350,32 +350,32 @@
             this.BtnPrecedent.Image = ((System.Drawing.Image)(resources.GetObject("BtnPrecedent.Image")));
             this.BtnPrecedent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnPrecedent.Name = "BtnPrecedent";
-            this.BtnPrecedent.Size = new System.Drawing.Size(29, 24);
+            this.BtnPrecedent.Size = new System.Drawing.Size(29, 28);
             this.BtnPrecedent.Text = "toolStripButton2";
             this.BtnPrecedent.Click += new System.EventHandler(this.BtnPrecedent_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // tbIndex
             // 
             this.tbIndex.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbIndex.Name = "tbIndex";
-            this.tbIndex.Size = new System.Drawing.Size(204, 27);
+            this.tbIndex.Size = new System.Drawing.Size(204, 31);
             this.tbIndex.TextChanged += new System.EventHandler(this.tbIndex_TextChanged);
             // 
             // toolStripLblTotal
             // 
             this.toolStripLblTotal.Name = "toolStripLblTotal";
-            this.toolStripLblTotal.Size = new System.Drawing.Size(48, 24);
+            this.toolStripLblTotal.Size = new System.Drawing.Size(48, 28);
             this.toolStripLblTotal.Text = "de {0}";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // BtnSuivant
             // 
@@ -383,7 +383,7 @@
             this.BtnSuivant.Image = ((System.Drawing.Image)(resources.GetObject("BtnSuivant.Image")));
             this.BtnSuivant.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnSuivant.Name = "BtnSuivant";
-            this.BtnSuivant.Size = new System.Drawing.Size(29, 24);
+            this.BtnSuivant.Size = new System.Drawing.Size(29, 28);
             this.BtnSuivant.Text = "toolStripButton3";
             this.BtnSuivant.Click += new System.EventHandler(this.BtnSuivant_Click);
             // 
@@ -393,7 +393,7 @@
             this.BtnDernier.Image = ((System.Drawing.Image)(resources.GetObject("BtnDernier.Image")));
             this.BtnDernier.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnDernier.Name = "BtnDernier";
-            this.BtnDernier.Size = new System.Drawing.Size(29, 24);
+            this.BtnDernier.Size = new System.Drawing.Size(29, 28);
             this.BtnDernier.Text = "toolStripButton4";
             this.BtnDernier.Click += new System.EventHandler(this.BtnDernier_Click);
             // 
@@ -489,7 +489,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.lblAffiche);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 27);
+            this.panel1.Location = new System.Drawing.Point(0, 31);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 48);
